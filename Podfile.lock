@@ -4,8 +4,16 @@ PODS:
   - Sourcery/CLI-Only (1.9.0)
   - VNCommon (0.0.1)
   - VNI (0.0.1):
+    - VNReviews
     - VNSearch
     - VNServices
+  - VNReviews (0.0.1):
+    - VNCommon
+    - VNReviewsInterfaces
+    - VNSearchInterfaces
+  - VNReviewsInterfaces (0.0.1)
+  - VNReviewsMocks (0.0.1):
+    - VNReviewsInterfaces
   - VNSearch (0.0.1):
     - VNCommon
     - VNSearchInterfaces
@@ -27,6 +35,9 @@ DEPENDENCIES:
   - Sourcery
   - VNCommon (from `Src/Common`)
   - VNI (from `Src/VNI`)
+  - VNReviews (from `Src/Reviews`)
+  - VNReviewsInterfaces (from `Src/Reviews`)
+  - VNReviewsMocks (from `Src/Reviews`)
   - VNSearch (from `Src/Search`)
   - VNSearchInterfaces (from `Src/Search`)
   - VNSearchMocks (from `Src/Search`)
@@ -43,6 +54,12 @@ EXTERNAL SOURCES:
     :path: Src/Common
   VNI:
     :path: Src/VNI
+  VNReviews:
+    :path: Src/Reviews
+  VNReviewsInterfaces:
+    :path: Src/Reviews
+  VNReviewsMocks:
+    :path: Src/Reviews
   VNSearch:
     :path: Src/Search
   VNSearchInterfaces:
@@ -59,7 +76,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Sourcery: d7c59d100e55bf59123c8ae7d65a24cf30748979
   VNCommon: c9efdf85fdfaeb4986b339511a5d7145d347cd89
-  VNI: 18bb0559680ef9f4d8e249371b188488b738724f
+  VNI: 3b535fc696df64dfa025641244255e5fdfee7e6d
+  VNReviews: 9c1084c76658f9b72c6a14bc79af82a1cfcd3590
+  VNReviewsInterfaces: 50a5af639190868253b3898a9f5998d2a25ebfd0
+  VNReviewsMocks: 91f38d530c1c92dad1a4fab14ea6a46e71d4045e
   VNSearch: 0228cfbd5470ca111eec5aec8d97fe58f876ba96
   VNSearchInterfaces: cf2dd158080a8acc663c4e580e93aed3ab2852bf
   VNSearchMocks: 156369601d9f354820180af83cb66abde33dbf01
@@ -67,6 +87,6 @@ SPEC CHECKSUMS:
   VNServicesInterfaces: 6ef64c0fbe685ff0e02c14a5d885502eb7d9a5e4
   VNServicesMocks: 86d61da922c36773d9f32dd6d9491ade7488d670
 
-PODFILE CHECKSUM: ff06c8aeea9b6c76aa76489d66efbfeb9ada9d01
+PODFILE CHECKSUM: 95281434c588c82750cfb9c8ce2ca9f5dffbb5d4
 
 COCOAPODS: 1.11.3

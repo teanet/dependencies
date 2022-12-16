@@ -10,6 +10,9 @@ pod 'VNServicesMocks',        :path => 'Src/Services'
 pod 'VNSearch',               :path => 'Src/Search'
 pod 'VNSearchInterfaces',     :path => 'Src/Search'
 pod 'VNSearchMocks',          :path => 'Src/Search'
+pod 'VNReviews',               :path => 'Src/Reviews'
+pod 'VNReviewsInterfaces',     :path => 'Src/Reviews'
+pod 'VNReviewsMocks',          :path => 'Src/Reviews'
 
 pod 'Sourcery'
 end

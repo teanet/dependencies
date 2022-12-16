@@ -3,29 +3,26 @@ import VNCommon
 import VNSearchInterfaces
 import VNServicesInterfaces
 
-// Dependencies
+public protocol ISearchContainerDependencies {}
 // этот парень генерируется
-public class SearchDependencies: ISearchDependencies {
-	let dependencies: ISearchDependencies
-	public init(dependencies: ISearchDependencies) {
+public class SearchDependencies: ISearchContainerDependencies {
+	let dependencies: ISearchContainerDependencies
+	public init(dependencies: ISearchContainerDependencies) {
 		self.dependencies = dependencies
 	}
-	public lazy var services: IServices = { self.dependencies.services }()
 }
 
-public protocol ISearchDependencies: IServicesProvider {}
-
-
-public class SearchContainer: BaseContainer<SearchDependencies>, ISearch {
-	public var searchResultsProvider: ISearchResultsProvider = SearchResultsProvider()
+public class SearchContainer: ISearchContainer {
+	public var cardId: String {
+		return "SearchContainerCardId"
+	}
 
 	public var placeholder: String {
 		return "123"
 	}
-}
 
-class SearchResultsProvider: ISearchResultsProvider {
-	var results: [String] {
-		["321", "123"]
+	let dependencies: ISearchContainerDependencies
+	public init(dependencies: ISearchContainerDependencies) {
+		self.dependencies = dependencies
 	}
 }

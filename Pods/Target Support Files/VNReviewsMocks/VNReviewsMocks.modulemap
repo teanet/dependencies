@@ -1,0 +1,6 @@
+module VNReviewsMocks {
+  umbrella header "VNReviewsMocks-umbrella.h"
+
+  export *
+  module * { export * }
+}

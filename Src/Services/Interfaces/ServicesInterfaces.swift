@@ -1,8 +1,9 @@
 import VNCommon
 
-public protocol IServices {
+public protocol IServicesContainer {
 	var userDefaults: UserDefaults { get }
 }
-public protocol IServicesProvider: IDependenciesProvider {
-	var services: IServices { get }
+
+public protocol IServicesContainerProvider {
+	var services: IServicesContainer { get }
 }

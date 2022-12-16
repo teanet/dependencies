@@ -3,19 +3,22 @@ import VNCommon
 import VNServicesInterfaces
 import VNSearchInterfaces
 
-public protocol IServicesDependencies: ISearchProvider {}
+public protocol IServicesContainerDependencies {}
 
 // этот парень генерируется
-public class ServicesDependencies: IServicesDependencies {
+public class ServicesContainerDependencies: IServicesContainerDependencies {
 
-	let dependencies: IServicesDependencies
-	public init(dependencies: IServicesDependencies) {
+	let dependencies: IServicesContainerDependencies
+	public init(dependencies: IServicesContainerDependencies) {
 		self.dependencies = dependencies
 	}
-
-	public lazy var search: ISearch = { self.dependencies.search }()
 }
 
-public class ServicesContainer: BaseContainer<ServicesDependencies>, IServices {
+public class ServicesContainer: IServicesContainer {
 	public var userDefaults: UserDefaults = .standard
+
+	let dependencies: IServicesContainerDependencies
+	public init(dependencies: IServicesContainerDependencies) {
+		self.dependencies = dependencies
+	}
 }
