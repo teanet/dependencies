@@ -1,0 +1,47 @@
+module ScriptPhase
+  def self.swiftlint
+    {
+      :name => '🚨 SwiftLint',
+      :script => '${PODS_ROOT}/SwiftLint/swiftlint lint ../../Src',
+      :execution_position => :after_compile
+    }
+  end
+end
+
+class Pod::Specification
+  def common_init(name, path = "Src")
+    self.name = name
+    self.version                = "0.0.1"
+    self.summary                = self.name
+    self.author                 = { "v4ios" => "v4ios@2gis.ru" }
+    self.homepage               = "http://EXAMPLE/#{self.name}"
+    self.license                = "MIT"
+    self.platform               = :ios, "12.0"
+    self.source                 = { :git => "http://2gis.ru/#{self.name}.git", :tag => "#{self.version}" }
+    self.source_files           = "#{path}/**/*.{swift}"
+    self.requires_arc           = true
+    self.ios.frameworks         = 'Foundation', 'UIKit'
+    self.swift_version = '5.0'
+  end
+
+  def common_app_spec
+    self.info_plist = {
+      'CFBundleLocalizations' => %w(ru en uk az uz),
+    }
+    self.script_phase = ScriptPhase.swiftlint
+    self.dependency 'VNCommonResources'
+  end
+
+  def common_test_spec
+    self.info_plist = {
+      'CFBundleLocalizations' => %w(ru en uk az uz),
+    }
+    self.dependency 'VNCommonResources'
+    self.dependency 'VNTestHelpers'
+    self.requires_app_host = true
+    self.app_host_name = 'TestHost/App'
+    self.dependency 'TestHost/App'
+
+  end
+
+end

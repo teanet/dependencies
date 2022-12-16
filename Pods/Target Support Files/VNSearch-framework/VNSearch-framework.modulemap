@@ -1,0 +1,6 @@
+framework module VNSearch {
+  umbrella header "VNSearch-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

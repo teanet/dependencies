@@ -1,0 +1,6 @@
+framework module VNI {
+  umbrella header "VNI-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "VNServicesMocks",
+  "version": "0.0.1",
+  "summary": "VNServicesMocks",
+  "authors": {
+    "v4ios": "v4ios@2gis.ru"
+  },
+  "homepage": "http://EXAMPLE/VNServicesMocks",
+  "license": "MIT",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "http://2gis.ru/VNServicesMocks.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Mocks/**/*.{swift}",
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "VNServicesInterfaces": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

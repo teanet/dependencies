@@ -1,0 +1,32 @@
+{
+  "name": "VNSearchMocks",
+  "version": "0.0.1",
+  "summary": "VNSearchMocks",
+  "authors": {
+    "v4ios": "v4ios@2gis.ru"
+  },
+  "homepage": "http://EXAMPLE/VNSearchMocks",
+  "license": "MIT",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "http://2gis.ru/VNSearchMocks.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Mocks/**/*.{swift}",
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "VNSearchInterfaces": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

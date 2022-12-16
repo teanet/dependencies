@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-__demodeps/Pods-__demodeps-frameworks.sh
+${BUILT_PRODUCTS_DIR}/VNCommon-framework/VNCommon.framework
+${BUILT_PRODUCTS_DIR}/VNSearch-framework/VNSearch.framework
+${BUILT_PRODUCTS_DIR}/VNSearchInterfaces-framework/VNSearchInterfaces.framework
+${BUILT_PRODUCTS_DIR}/VNServices-framework/VNServices.framework
+${BUILT_PRODUCTS_DIR}/VNServicesInterfaces-framework/VNServicesInterfaces.framework
+${BUILT_PRODUCTS_DIR}/VNI/VNI.framework

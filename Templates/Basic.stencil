@@ -1,0 +1,11 @@
+// Found {{ types.all.count }} Types
+{% for type in types.enums %} 
+
+extension {{ type.name }} {
+	{% for case in type.cases %}
+	var is{{ case.name }}: Bool {
+	}
+	{% endfor %}
+}
+
+{% endfor %}

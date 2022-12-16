@@ -1,0 +1,3325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4D8229B0397AE8C2F7C11B3F9EFC9362 /* Sourcery */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C0FA8664472892B08200EA125A01D5C /* Build configuration list for PBXAggregateTarget "Sourcery" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Sourcery;
+		};
+		9BD12465FA405DA7E49EEB8F5B2CDB36 /* VNSearchMocks */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6518E71253B508504D66AA8CE0571287 /* Build configuration list for PBXAggregateTarget "VNSearchMocks" */;
+			buildPhases = (
+			);
+			dependencies = (
+				6EC2128453CF9B70FE4D3F383A4486CD /* PBXTargetDependency */,
+			);
+			name = VNSearchMocks;
+		};
+		F850D3ACDC0F67CB7052553947159FA9 /* VNServicesMocks */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 81D719577E03D0CC89EA24C40E4328D1 /* Build configuration list for PBXAggregateTarget "VNServicesMocks" */;
+			buildPhases = (
+			);
+			dependencies = (
+				465BC3048FEFD69C8060F71FACD86F0A /* PBXTargetDependency */,
+			);
+			name = VNServicesMocks;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01E955ABB1C1A4F8616B9A27C773A503 /* ServicesInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245255A89BDD3798F9C319C498A300E /* ServicesInterfaces.swift */; };
+		049A7314E3EE497ABD0E2190D6CFCF50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0B8C3C40612DE9B89EBFDE8A1E942E9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		1464447A497BF9D543A578BD343A71C4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCAD27E30F631E5199AF55B6731CF3 /* Common.swift */; };
+		1B47E992C02C8C1CB298C6EA01AADEEE /* SearchInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558C861CE7CA4F0848B933BE5833377A /* SearchInterfaces.swift */; };
+		1DD32297AD83E0B069921B76C25650ED /* VNI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D8488035176C39A2F967FF0A7032D /* VNI-dummy.m */; };
+		20E93C853D30C0899E4DAEFC1ADD5C52 /* VNI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC3E9A019455C37A1F76BC56F05717 /* VNI.swift */; };
+		23D004887B48122C658898C7CCDDE637 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD958333CA5D97182087DB3C01AF135 /* Search.swift */; };
+		25E31DC5E4E0CE2C9DCECAC1F7949E3C /* VNI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18741BE56733D37C816900849FC81815 /* VNI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2608BD430FCADBC56FA1DF98A97E6E97 /* VNServices-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27494B66DE0C107482491E1AADCE2898 /* VNServices-framework-dummy.m */; };
+		2957D144EF7DCC58384938383D6202CC /* VNSearch-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3828F91CA9F73EC854D402C15A9E472D /* VNSearch-library-dummy.m */; };
+		300BCF30267F7729F7294B7550CE51E8 /* Pods-__demodeps-__demodepsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FB596BC184D59FDF105B2EC6B58E74 /* Pods-__demodeps-__demodepsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30888E63F63E9AD5F95553EBDD54A404 /* VNServices-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A3D0D4C97E7D578563783F7EC76E92 /* VNServices-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34B741A368292E4E93162B795B5A8A9C /* VNServicesInterfaces-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD792865FF4EC5FB945F080EDFD41D0 /* VNServicesInterfaces-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3632886525BE45670766FE7D8672F193 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		38318D8D6CE0EA9EFCEC9503D12819F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3B3B298FE39CFB787E06CE277C15C264 /* VNCommon-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E9D85046AF5A67F4956DFB8EE0D629 /* VNCommon-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3EE768903242F22CE2CD74919883CB9D /* Pods-__demodepsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE15C953B645F23928F343D31739513 /* Pods-__demodepsTests-dummy.m */; };
+		4809D7C88BD106EAF4618AEBDF148D45 /* VNSearchInterfaces-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7570FEDF591A70B94F23D61C442178 /* VNSearchInterfaces-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		511E84186F215D54B7FCA3B35101D5BD /* VNServices-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2175F7931D4D6924C4271F3D4BE6CB /* VNServices-library-dummy.m */; };
+		612BB06BC700682F5A7E95EAB048119E /* Pods-__demodepsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0CA7DCA3A7A5C0383731BA70F08D7E /* Pods-__demodepsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61B7D9F1C33A27684AAFBAED5497E12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		642429A771C03F484AD5216BF068358A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAAD60694F06915AD8D5784B7E43CA /* Services.swift */; };
+		649CEB9F26C66FC57A2A22964CAD3C4F /* VNCommon-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D468ABCC30E41880A539EA20CE9437D6 /* VNCommon-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		655A5191C743D69EDB71B406445A40C7 /* VNSearch-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 292ADA7FF51A12D82B435EF00426B016 /* VNSearch-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65D6B49CEC7BB4D1A7CD537F0056C26B /* VNCommon-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B62B8FB245E7569B1C608E63C8C2F /* VNCommon-library-dummy.m */; };
+		6AC111BB5B33DDA9A174E8B1E2BB8D0B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCAD27E30F631E5199AF55B6731CF3 /* Common.swift */; };
+		7577406762074329B9E2B0768D1F5EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7D4F9EB8D246D04CC298E5C8B84DC793 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		7F1906941605E545911251323770E6C5 /* SearchInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558C861CE7CA4F0848B933BE5833377A /* SearchInterfaces.swift */; };
+		7FCF65B744FFA26B87D46EB859C8008F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		82FE272C9E6C6077341C6CC67AFC4DC1 /* Pods-__demodeps-__demodepsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5902CAB7DA25E004A293597D610F69 /* Pods-__demodeps-__demodepsUITests-dummy.m */; };
+		845674E86598B17193E620B8316A9AF2 /* VNSearch-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A1C5D04BF45BF9DF86C06B9F4C4BD /* VNSearch-framework-dummy.m */; };
+		89799F737378FAA18C7597773CD4DBFD /* VNServices-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA4C7E93EF1C2CE39E0C3B1DFCF6F40 /* VNServices-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A66ECFD0F2BC1DDE3F726C7B9886F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		911FEFA2DB0E82B70D0FB1959D97612A /* VNSearchInterfaces-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 920FEEBCC006CEFA9C51BE44F89DCAF1 /* VNSearchInterfaces-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99A2B027A1322D5282005BC53176153F /* VNServicesInterfaces-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B775522B580FEB29B909228174CDFFF2 /* VNServicesInterfaces-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B46F0A5F67CF9AE800C271BED14E88B0 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAAD60694F06915AD8D5784B7E43CA /* Services.swift */; };
+		B85DD766B8C8965F610628C983B2CE1F /* VNCommon-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 689C083E202347933CEE79AC42FF652D /* VNCommon-framework-dummy.m */; };
+		C0F59F8C2424DD167F79D39B83BE17F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		C60C700B4E2D92A7057B99BB7BD63D73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C68391D41D2DB06CB0BE663A05196D52 /* VNServicesInterfaces-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 744C7B01F88760800CEEA1742AD4F230 /* VNServicesInterfaces-library-dummy.m */; };
+		CAC85D2E279ADF393B9CE2EA1EA77ADE /* ServicesInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245255A89BDD3798F9C319C498A300E /* ServicesInterfaces.swift */; };
+		CCE7E4D60BB81A3EB4E1811782B7A676 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		D57CECAF58DD06F3CB0BE618961E759B /* Pods-__demodeps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2DFC11E9237B92E7F0F68D83E729AB /* Pods-__demodeps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7B7F8C242B19A5B9FE4C32220852DFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		D9BBA1069AFF3DE5A21620F78D0AB93C /* VNServicesInterfaces-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A592024294FC5E03624595CF3BF501E /* VNServicesInterfaces-framework-dummy.m */; };
+		DC49C4AE6D747DDFFE0411BE6BBAEAFF /* VNSearchInterfaces-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5626149D8BAEF8F96DDC13089BB3D5DB /* VNSearchInterfaces-library-dummy.m */; };
+		DDDB927DCBF338A81153A465CF0FE38B /* Pods-__demodeps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E47DE0BB284D65E15186D4EDC9303E /* Pods-__demodeps-dummy.m */; };
+		E05B4BF85D7C670A0B101247645DBA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		E54DA424A764C5B67738E305427C11DD /* VNSearch-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9BC4F3E4FEA8DAAE78AAD9BB6BE467 /* VNSearch-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EDACEE46001DA18ABC6D165365A162 /* VNSearchInterfaces-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D38E95377F441BF1F7E2840058394F /* VNSearchInterfaces-framework-dummy.m */; };
+		FABE789BA9045A8542235AA18D4DDF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		FEA8BEB45D417BC9735092021032E3B4 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD958333CA5D97182087DB3C01AF135 /* Search.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0519963BFADEA6F6C0800765716FBF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58C1B22ADB67AB1135A687F32FC35DA;
+			remoteInfo = "VNSearchInterfaces-framework";
+		};
+		08D653FCE9DE1B099C09C52FFD614CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3209B3CA27A4650410CE180EEF9145FE;
+			remoteInfo = VNI;
+		};
+		0E3CC2C7977FA8F5DFD0582E073E9A8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07D8B02B26C1CE2F787063AC4FF54B6;
+			remoteInfo = "VNServicesInterfaces-framework";
+		};
+		11802AD7FC6B637D11C79E3414526C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02D063FC109680EA8D0094AC419BC7B;
+			remoteInfo = "VNSearchInterfaces-library";
+		};
+		51EA6B58F4476FED82F8FCA78AC70668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02D063FC109680EA8D0094AC419BC7B;
+			remoteInfo = "VNSearchInterfaces-library";
+		};
+		57E031FF6B866021AEC81848CB7E271C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB8BC01A79D711373F68DB636FB5FAC;
+			remoteInfo = "VNCommon-library";
+		};
+		5D49F2E06E529CB6918DBEE34320571A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 972E1F798DB23B1AAFFEEBA614D5314E;
+			remoteInfo = "VNSearch-framework";
+		};
+		60B9D898B2DC32D6B2C7213FD5313F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 972E1F798DB23B1AAFFEEBA614D5314E;
+			remoteInfo = "VNSearch-framework";
+		};
+		652BB7D6644D88195B777AE3676CAACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58C1B22ADB67AB1135A687F32FC35DA;
+			remoteInfo = "VNSearchInterfaces-framework";
+		};
+		6A964510B96D4877CA9A5F1D65B13412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB8BC01A79D711373F68DB636FB5FAC;
+			remoteInfo = "VNCommon-library";
+		};
+		70EFEE97B4F95C8B797B581EAF378500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3209B3CA27A4650410CE180EEF9145FE;
+			remoteInfo = VNI;
+		};
+		71CEAA60AEE93256408C0F09ABBC66F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB8BC01A79D711373F68DB636FB5FAC;
+			remoteInfo = "VNCommon-library";
+		};
+		72DA6C4A61CB5A355B3BB907DF852875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59A2B27FC5E417202EB05C443A41D336;
+			remoteInfo = "VNServices-framework";
+		};
+		793C829324EFAF19066FD7C34A834736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58C1B22ADB67AB1135A687F32FC35DA;
+			remoteInfo = "VNSearchInterfaces-framework";
+		};
+		7BD21EFA4111D8F11EFE4C812AAFE75F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		8146EC18FD794F5B62F07CE0F4E61A43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		8D350FD7740935B3D04ED862947E21AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07D8B02B26C1CE2F787063AC4FF54B6;
+			remoteInfo = "VNServicesInterfaces-framework";
+		};
+		937C263512E93659AFB797194E5B1120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 972E1F798DB23B1AAFFEEBA614D5314E;
+			remoteInfo = "VNSearch-framework";
+		};
+		9775ADAEF31E2BC5BB5A7EBAF6B2FB51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8EE85CE9DC254235075EC405F264FD1;
+			remoteInfo = "Pods-__demodeps";
+		};
+		988A7EC43D3B6A4A1A94CB4BD303DFCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		A71868E285AA0EEA89BCC2792B3B136B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07D8B02B26C1CE2F787063AC4FF54B6;
+			remoteInfo = "VNServicesInterfaces-framework";
+		};
+		AF51408DC107E74AD18AA4A55AA749CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB8BC01A79D711373F68DB636FB5FAC;
+			remoteInfo = "VNCommon-library";
+		};
+		B8FEE50E2F5D82777B8E2DDBC703081B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		CAA96A9DAFCFBCFE475D7776604E1D5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		CB5B9428911CD199B5CE487A18BE9CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412B3690BB110DAE5E712BAA3BF47C95;
+			remoteInfo = "VNServicesInterfaces-library";
+		};
+		E13DD4E5C3306CB23C112138F6AC4D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412B3690BB110DAE5E712BAA3BF47C95;
+			remoteInfo = "VNServicesInterfaces-library";
+		};
+		E43ECA4D7913554875CB4681018B5093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07D8B02B26C1CE2F787063AC4FF54B6;
+			remoteInfo = "VNServicesInterfaces-framework";
+		};
+		F2DDB3EF16615C12D84F48F74AB7092E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59A2B27FC5E417202EB05C443A41D336;
+			remoteInfo = "VNServices-framework";
+		};
+		F40FAAA738D7890008FBAD99D5215568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59A2B27FC5E417202EB05C443A41D336;
+			remoteInfo = "VNServices-framework";
+		};
+		F7213721BB243D33E8E32EE8E7004634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5003A371683E77467016FF163EBF2D;
+			remoteInfo = "VNCommon-framework";
+		};
+		F72A39BB771C0655A4FB3FAC1C13DCC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02D063FC109680EA8D0094AC419BC7B;
+			remoteInfo = "VNSearchInterfaces-library";
+		};
+		F7A23B1722FB6022A851C557AE8057BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58C1B22ADB67AB1135A687F32FC35DA;
+			remoteInfo = "VNSearchInterfaces-framework";
+		};
+		FA045E1A59FAAA075C4801F314BB50FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412B3690BB110DAE5E712BAA3BF47C95;
+			remoteInfo = "VNServicesInterfaces-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00088E0FB56869EFE51C6AE927FB9B15 /* Pods-__demodeps-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodeps-acknowledgements.plist"; sourceTree = "<group>"; };
+		0660DDEDF36054ACD61F4B2B519C59ED /* VNCommon-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNCommon-framework-prefix.pch"; sourceTree = "<group>"; };
+		06B35F7640666963F1E7F38C515B0175 /* VNI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNI.release.xcconfig; sourceTree = "<group>"; };
+		08006BFB171252B12BA5F0395E5C0A0D /* VNCommon-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNCommon-library.release.xcconfig"; path = "../VNCommon-library/VNCommon-library.release.xcconfig"; sourceTree = "<group>"; };
+		081FAE806F6D68B151460192DED320B7 /* VNServicesMocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNServicesMocks.debug.xcconfig; sourceTree = "<group>"; };
+		0A1F806E5881E1E3F976EAC77BDB92A2 /* VNCommon-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "VNCommon-library"; path = "libVNCommon-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECCAD27E30F631E5199AF55B6731CF3 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Src/Common.swift; sourceTree = "<group>"; };
+		10A0F9436D5D9E5BE617950D1F08F735 /* Pods-__demodepsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodepsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		15661005969200355C89F7FD58A8C003 /* VNServicesInterfaces-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "VNServicesInterfaces-library.modulemap"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library.modulemap"; sourceTree = "<group>"; };
+		18741BE56733D37C816900849FC81815 /* VNI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNI-umbrella.h"; sourceTree = "<group>"; };
+		1B16470A038863F866BCA89020457562 /* Pods-__demodeps-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-__demodeps-frameworks.sh"; sourceTree = "<group>"; };
+		1C0B62B8FB245E7569B1C608E63C8C2F /* VNCommon-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VNCommon-library-dummy.m"; path = "../VNCommon-library/VNCommon-library-dummy.m"; sourceTree = "<group>"; };
+		1C4326470C449AB586BB17760209C0FD /* Sourcery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sourcery.debug.xcconfig; sourceTree = "<group>"; };
+		1E1546DB3F45EBD7A2949AE8441C595D /* VNServices-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VNServices-framework"; path = VNServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E75E44B3293469F155DC9DF137CE453 /* VNServices-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "VNServices-library.modulemap"; path = "../VNServices-library/VNServices-library.modulemap"; sourceTree = "<group>"; };
+		222876D069B0A2D8D8A1A5787EED67B8 /* VNCommon-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNCommon-library.debug.xcconfig"; path = "../VNCommon-library/VNCommon-library.debug.xcconfig"; sourceTree = "<group>"; };
+		22AD8D51A21970A12FBF81C94D9DDB9B /* VNSearch-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNSearch-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		233A76B4A5995F766FE991327EAA85A3 /* VNI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VNI; path = VNI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27494B66DE0C107482491E1AADCE2898 /* VNServices-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNServices-framework-dummy.m"; sourceTree = "<group>"; };
+		287376AAAB73902ACF48C16F5904ACFB /* VNI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNI-prefix.pch"; sourceTree = "<group>"; };
+		292ADA7FF51A12D82B435EF00426B016 /* VNSearch-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNSearch-library-umbrella.h"; path = "../VNSearch-library/VNSearch-library-umbrella.h"; sourceTree = "<group>"; };
+		2B568E1CE0234DD0F34748B843825686 /* VNSearchInterfaces-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNSearchInterfaces-library.debug.xcconfig"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library.debug.xcconfig"; sourceTree = "<group>"; };
+		2CBCC6BA78A66EF83B166A64B1707324 /* VNServicesInterfaces-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNServicesInterfaces-library-prefix.pch"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library-prefix.pch"; sourceTree = "<group>"; };
+		2D5D0E96D1786E9607D168C2110AA022 /* VNSearch-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNSearch-library.debug.xcconfig"; path = "../VNSearch-library/VNSearch-library.debug.xcconfig"; sourceTree = "<group>"; };
+		2F995E4B6247F9F1C95F90A047C48B32 /* VNServicesInterfaces-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "VNServicesInterfaces-framework.modulemap"; sourceTree = "<group>"; };
+		3147FC3D0A3F73AB7F71F9801B977A20 /* VNCommon-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNCommon-framework-Info.plist"; sourceTree = "<group>"; };
+		315815BCC7373FD9BE0DF4B46B2697D2 /* VNSearchInterfaces-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNSearchInterfaces-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		35EF3A68AF98430454B24B3D2A6A84A0 /* VNSearchInterfaces-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VNSearchInterfaces-framework"; path = VNSearchInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AAAD60694F06915AD8D5784B7E43CA /* Services.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Services.swift; path = Src/Services.swift; sourceTree = "<group>"; };
+		3828F91CA9F73EC854D402C15A9E472D /* VNSearch-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VNSearch-library-dummy.m"; path = "../VNSearch-library/VNSearch-library-dummy.m"; sourceTree = "<group>"; };
+		39A3D0D4C97E7D578563783F7EC76E92 /* VNServices-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNServices-library-umbrella.h"; path = "../VNServices-library/VNServices-library-umbrella.h"; sourceTree = "<group>"; };
+		3BEC805E73E864815027825671F6DDE8 /* VNServicesInterfaces-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNServicesInterfaces-library.release.xcconfig"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library.release.xcconfig"; sourceTree = "<group>"; };
+		3C5902CAB7DA25E004A293597D610F69 /* Pods-__demodeps-__demodepsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-__demodeps-__demodepsUITests-dummy.m"; sourceTree = "<group>"; };
+		3D8373FD6F7DD64E8B05FB3DF2D2C1A7 /* VNServicesMocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNServicesMocks.release.xcconfig; sourceTree = "<group>"; };
+		3E2175F7931D4D6924C4271F3D4BE6CB /* VNServices-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VNServices-library-dummy.m"; path = "../VNServices-library/VNServices-library-dummy.m"; sourceTree = "<group>"; };
+		412F968188BA9BD7048F150C51265292 /* Pods-__demodeps-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-__demodeps-acknowledgements.markdown"; sourceTree = "<group>"; };
+		422F6C911E93AC398E4DBF673CD300EC /* VNServices-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "VNServices-library"; path = "libVNServices-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BC3E9A019455C37A1F76BC56F05717 /* VNI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VNI.swift; path = Src/VNI.swift; sourceTree = "<group>"; };
+		477C556F65BED206C593E364AE8FDA4A /* Pods-__demodepsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodepsTests.release.xcconfig"; sourceTree = "<group>"; };
+		47B953551B89CF65557BD1C38C188B8E /* VNCommon-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNCommon-framework.release.xcconfig"; sourceTree = "<group>"; };
+		4800A72F07554FDC5BF244B75C03CB3D /* Pods-__demodepsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodepsTests-Info.plist"; sourceTree = "<group>"; };
+		4CD958333CA5D97182087DB3C01AF135 /* Search.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Src/Search.swift; sourceTree = "<group>"; };
+		4DC809005245415FE2FCC9C6C3694281 /* VNServices-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNServices-framework-prefix.pch"; sourceTree = "<group>"; };
+		4EA074E2945D74CC5139EA0AE31FFE27 /* VNSearch-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNSearch-library.release.xcconfig"; path = "../VNSearch-library/VNSearch-library.release.xcconfig"; sourceTree = "<group>"; };
+		54FAFF35B5797F79FC7C6E8E3CA22F4D /* VNServices-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNServices-framework-Info.plist"; sourceTree = "<group>"; };
+		558C861CE7CA4F0848B933BE5833377A /* SearchInterfaces.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchInterfaces.swift; path = Interfaces/SearchInterfaces.swift; sourceTree = "<group>"; };
+		5626149D8BAEF8F96DDC13089BB3D5DB /* VNSearchInterfaces-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VNSearchInterfaces-library-dummy.m"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library-dummy.m"; sourceTree = "<group>"; };
+		5AA4C0D19F29FF2339B262B7ACD31A37 /* VNSearch-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNSearch-framework.release.xcconfig"; sourceTree = "<group>"; };
+		5BBC152A0D6A397C466C25AC448E2E59 /* Sourcery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sourcery.release.xcconfig; sourceTree = "<group>"; };
+		5C7570FEDF591A70B94F23D61C442178 /* VNSearchInterfaces-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNSearchInterfaces-framework-umbrella.h"; sourceTree = "<group>"; };
+		5CD792865FF4EC5FB945F080EDFD41D0 /* VNServicesInterfaces-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNServicesInterfaces-library-umbrella.h"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library-umbrella.h"; sourceTree = "<group>"; };
+		5D6C3F0B3CE08E8EAC25DD620626F90A /* VNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNI.debug.xcconfig; sourceTree = "<group>"; };
+		5ED891A600ED665D2FD149F52F315AEE /* Pods-__demodepsTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-__demodepsTests"; path = Pods___demodepsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		618A5F882870D43EC358A4569F92A7E3 /* VNServicesInterfaces-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "VNServicesInterfaces-library"; path = "libVNServicesInterfaces-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		623D05655FA774414A137C97B56467FA /* VNServices-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNServices-library.release.xcconfig"; path = "../VNServices-library/VNServices-library.release.xcconfig"; sourceTree = "<group>"; };
+		62CC1816C8A45E5734B491AD425DE67F /* Pods-__demodeps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodeps.debug.xcconfig"; sourceTree = "<group>"; };
+		64E9D85046AF5A67F4956DFB8EE0D629 /* VNCommon-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNCommon-library-umbrella.h"; path = "../VNCommon-library/VNCommon-library-umbrella.h"; sourceTree = "<group>"; };
+		668AE76E6A23A6B2B3D756E540468718 /* VNI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		684FF965225F59B6C4749B7F3DA36451 /* Pods-__demodepsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-__demodepsTests.modulemap"; sourceTree = "<group>"; };
+		689C083E202347933CEE79AC42FF652D /* VNCommon-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNCommon-framework-dummy.m"; sourceTree = "<group>"; };
+		698695492F62640EFD861758D1DD8338 /* VNServices-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNServices-framework.release.xcconfig"; sourceTree = "<group>"; };
+		6B4487E9972961DE448E0EEF8D1D4E41 /* VNSearchInterfaces.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNSearchInterfaces.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6DF0F7A50E81EDA643FF5045044A7692 /* VNServicesInterfaces-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNServicesInterfaces-library.debug.xcconfig"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library.debug.xcconfig"; sourceTree = "<group>"; };
+		6F3F5785E0D2FB9ABFACC0A8D9485AC0 /* VNCommon-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "VNCommon-library.modulemap"; path = "../VNCommon-library/VNCommon-library.modulemap"; sourceTree = "<group>"; };
+		723C228B708B2B0F126E758CF79C30D3 /* VNSearchInterfaces-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "VNSearchInterfaces-library"; path = "libVNSearchInterfaces-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7245255A89BDD3798F9C319C498A300E /* ServicesInterfaces.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicesInterfaces.swift; path = Interfaces/ServicesInterfaces.swift; sourceTree = "<group>"; };
+		7254DC5073045F75449A5EEE8367B73A /* Pods-__demodepsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-__demodepsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72B766840E636C683DACCE1FB567DD84 /* VNCommon-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "VNCommon-framework.modulemap"; sourceTree = "<group>"; };
+		744C7B01F88760800CEEA1742AD4F230 /* VNServicesInterfaces-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VNServicesInterfaces-library-dummy.m"; path = "../VNServicesInterfaces-library/VNServicesInterfaces-library-dummy.m"; sourceTree = "<group>"; };
+		7628B47D28D54D918B2EDC7781E7F63A /* VNServices.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNServices.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		77E47DE0BB284D65E15186D4EDC9303E /* Pods-__demodeps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-__demodeps-dummy.m"; sourceTree = "<group>"; };
+		79D886294523D016CBABF6564A5B2A8F /* Pods-__demodeps */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-__demodeps"; path = Pods___demodeps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE15C953B645F23928F343D31739513 /* Pods-__demodepsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-__demodepsTests-dummy.m"; sourceTree = "<group>"; };
+		7CF416287F644259593F3C60E02D7D10 /* VNCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81C16F58299BD9B17F78C2AA35D0E6AE /* VNServicesInterfaces-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNServicesInterfaces-framework.release.xcconfig"; sourceTree = "<group>"; };
+		846C6C353B928B1CF449A795BCF4EAFC /* VNSearchInterfaces-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNSearchInterfaces-library.release.xcconfig"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library.release.xcconfig"; sourceTree = "<group>"; };
+		84DB71C68085A0445766E11B16994AC6 /* VNServices-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VNServices-library.debug.xcconfig"; path = "../VNServices-library/VNServices-library.debug.xcconfig"; sourceTree = "<group>"; };
+		86175099564AD83AC836DB7ED6B7D338 /* Pods-__demodeps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodeps.release.xcconfig"; sourceTree = "<group>"; };
+		86222EAD0EDE1957E319694126A95D86 /* VNSearchInterfaces-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "VNSearchInterfaces-library.modulemap"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library.modulemap"; sourceTree = "<group>"; };
+		87DD6CBB8B2C5CD0FCB00B8391AE8ED8 /* VNServicesInterfaces-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNServicesInterfaces-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		8D37EA4F79AB7C57FC96C35E4D8C043A /* VNSearch-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "VNSearch-library"; path = "libVNSearch-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA4C7E93EF1C2CE39E0C3B1DFCF6F40 /* VNServices-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNServices-framework-umbrella.h"; sourceTree = "<group>"; };
+		8F2DBF17F2B26C3C9830FEE319278423 /* Pods-__demodeps-__demodepsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-__demodeps-__demodepsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		91FB596BC184D59FDF105B2EC6B58E74 /* Pods-__demodeps-__demodepsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-__demodeps-__demodepsUITests-umbrella.h"; sourceTree = "<group>"; };
+		920FEEBCC006CEFA9C51BE44F89DCAF1 /* VNSearchInterfaces-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNSearchInterfaces-library-umbrella.h"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library-umbrella.h"; sourceTree = "<group>"; };
+		98F822E75CBDC5A9739F2FBDA8E963F8 /* VNSearchMocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNSearchMocks.debug.xcconfig; sourceTree = "<group>"; };
+		99BEBB3956A5D4291E131F211EFD83C4 /* VNI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VNI.modulemap; sourceTree = "<group>"; };
+		9A592024294FC5E03624595CF3BF501E /* VNServicesInterfaces-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNServicesInterfaces-framework-dummy.m"; sourceTree = "<group>"; };
+		9C15A5F6D837295A05E96B85A960A682 /* Pods-__demodeps-__demodepsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodeps-__demodepsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD6B67F190EC69491FDA4398142A0FF /* VNServicesMocks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNServicesMocks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E36A60D8B797335410D35CCDD9B5ACB /* VNSearch-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "VNSearch-framework.modulemap"; sourceTree = "<group>"; };
+		A4F13E9520875AE0D4028E54CBCE8C65 /* VNSearchMocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VNSearchMocks.release.xcconfig; sourceTree = "<group>"; };
+		A93171B111AB282C9554DDE55F03BF05 /* VNServices-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNServices-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4E546AAA252DEBCCD262F3D91A27A6 /* Pods-__demodeps-__demodepsUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-__demodeps-__demodepsUITests"; path = Pods___demodeps___demodepsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BE31CD9CC3A566E706FFA479E2256E /* VNSearch-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNSearch-framework-Info.plist"; sourceTree = "<group>"; };
+		B24A1C5D04BF45BF9DF86C06B9F4C4BD /* VNSearch-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNSearch-framework-dummy.m"; sourceTree = "<group>"; };
+		B38563EFC07418349145449F86A4640A /* Pods-__demodepsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodepsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4CF23877A9671A96AD00592E51D200B /* Pods-__demodeps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodeps-Info.plist"; sourceTree = "<group>"; };
+		B7310F6E59769BB45BE6C080B943CA74 /* VNServices-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "VNServices-framework.modulemap"; sourceTree = "<group>"; };
+		B775522B580FEB29B909228174CDFFF2 /* VNServicesInterfaces-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNServicesInterfaces-framework-umbrella.h"; sourceTree = "<group>"; };
+		B7815BABE17190632E7E65C90267149C /* VNCommon-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNCommon-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		BA9BC4F3E4FEA8DAAE78AAD9BB6BE467 /* VNSearch-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNSearch-framework-umbrella.h"; sourceTree = "<group>"; };
+		BD1FCDA22DCC7BEADCDF7C8C179CE54E /* VNServicesInterfaces-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VNServicesInterfaces-framework"; path = VNServicesInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD2324C752A0EFAF4AD8F1DFDE4F83F /* VNSearchInterfaces-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNSearchInterfaces-framework-prefix.pch"; sourceTree = "<group>"; };
+		C1BE50AA261CE1DC336FA43BE34F7926 /* VNSearch-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VNSearch-framework"; path = VNSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37C5F506F850FCF3EAF2776C23711C0 /* VNSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C55BC91F078736069D0FE89A29524F29 /* Pods-__demodeps-__demodepsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-__demodeps-__demodepsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C657F5186B110C776724196ABFA8388A /* VNSearch-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "VNSearch-library.modulemap"; path = "../VNSearch-library/VNSearch-library.modulemap"; sourceTree = "<group>"; };
+		C8E972821791281F2FB7332AC3D51F07 /* VNSearchInterfaces-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VNSearchInterfaces-framework.release.xcconfig"; sourceTree = "<group>"; };
+		CA81FD2013BA7827B4C2D4305FCEB630 /* VNCommon-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNCommon-library-prefix.pch"; path = "../VNCommon-library/VNCommon-library-prefix.pch"; sourceTree = "<group>"; };
+		CAC10406849A7E189BC58694E1225AA3 /* VNSearch-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNSearch-framework-prefix.pch"; sourceTree = "<group>"; };
+		CB2DFC11E9237B92E7F0F68D83E729AB /* Pods-__demodeps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-__demodeps-umbrella.h"; sourceTree = "<group>"; };
+		CC7D7EB85A63142B427F369F8D0B23B3 /* Pods-__demodeps-__demodepsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodeps-__demodepsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF0F9CEAE24A14C31203203AF702BFB0 /* VNServicesInterfaces-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNServicesInterfaces-framework-prefix.pch"; sourceTree = "<group>"; };
+		D016B16CFB050B00EE079872EE91B3CA /* VNServicesInterfaces-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNServicesInterfaces-framework-Info.plist"; sourceTree = "<group>"; };
+		D1161BE1E3F585DBB2E9A54930674DA2 /* Pods-__demodeps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-__demodeps.modulemap"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D468ABCC30E41880A539EA20CE9437D6 /* VNCommon-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VNCommon-framework-umbrella.h"; sourceTree = "<group>"; };
+		DC04C730F775112810B6E3CF1D9A1FAC /* VNServicesInterfaces.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNServicesInterfaces.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E2FCD41C0AB7F35BC458F473318151F7 /* VNCommon-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VNCommon-framework"; path = VNCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3ACE4EBACDC0505573FBC7B366156FB /* VNSearch-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNSearch-library-prefix.pch"; path = "../VNSearch-library/VNSearch-library-prefix.pch"; sourceTree = "<group>"; };
+		E5D38E95377F441BF1F7E2840058394F /* VNSearchInterfaces-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNSearchInterfaces-framework-dummy.m"; sourceTree = "<group>"; };
+		E71F553418FBDF658CC534A949FCADF3 /* VNSearchInterfaces-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNSearchInterfaces-library-prefix.pch"; path = "../VNSearchInterfaces-library/VNSearchInterfaces-library-prefix.pch"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAD86650C19BFC3003212FFF0CC23304 /* VNSearchInterfaces-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "VNSearchInterfaces-framework.modulemap"; sourceTree = "<group>"; };
+		EAF1DACDC5F13A2A51D142CC782CA3DE /* VNI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNI-Info.plist"; sourceTree = "<group>"; };
+		EB3D8488035176C39A2F967FF0A7032D /* VNI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VNI-dummy.m"; sourceTree = "<group>"; };
+		EB74D68F7419D596E92515651F934F1C /* VNSearchInterfaces-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VNSearchInterfaces-framework-Info.plist"; sourceTree = "<group>"; };
+		EE0CA7DCA3A7A5C0383731BA70F08D7E /* Pods-__demodepsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-__demodepsTests-umbrella.h"; sourceTree = "<group>"; };
+		F1D07682CB7E885EC6CF7B1C040253BA /* Pods-__demodeps-__demodepsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-__demodeps-__demodepsUITests-Info.plist"; sourceTree = "<group>"; };
+		F3C447A6BD62A7D2983618261984DD8B /* Pods-__demodeps-__demodepsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-__demodeps-__demodepsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4ED5E686A2B850F6A004C85AEA82F5D /* VNServices-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VNServices-library-prefix.pch"; path = "../VNServices-library/VNServices-library-prefix.pch"; sourceTree = "<group>"; };
+		FC7C8A9565FE642C8F6CC04D74B1AF15 /* Pods-__demodeps-__demodepsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-__demodeps-__demodepsUITests.modulemap"; sourceTree = "<group>"; };
+		FE41E9FB23E55AB59CBC94D78C05CC09 /* VNSearchMocks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VNSearchMocks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043AA3D23D98D94D94B4F1D0FC2A3D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8C3C40612DE9B89EBFDE8A1E942E9E /* Foundation.framework in Frameworks */,
+				7FCF65B744FFA26B87D46EB859C8008F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143B1292433BFC60A23876C4883751F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3632886525BE45670766FE7D8672F193 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1995ACCDBEA364745B506F7703C481EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7577406762074329B9E2B0768D1F5EFF /* Foundation.framework in Frameworks */,
+				7D4F9EB8D246D04CC298E5C8B84DC793 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2023A91F525723F1CEFF561FD4073D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A7314E3EE497ABD0E2190D6CFCF50 /* Foundation.framework in Frameworks */,
+				D7B7F8C242B19A5B9FE4C32220852DFE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279122FDAB37AA79BBFEF7BAE29BE714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABE789BA9045A8542235AA18D4DDF93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39BA2404A016695AFCAEBF91E9B1FDF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416493D55BE2379713A46DCC38E003AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5427297867A7A01ABF823902685FECF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B7D9F1C33A27684AAFBAED5497E12E /* Foundation.framework in Frameworks */,
+				C0F59F8C2424DD167F79D39B83BE17F6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854EDC745DBF0CE1CC96B15958FDD941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		902470CB8459ED983AD7515D5AE5CE39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60C700B4E2D92A7057B99BB7BD63D73 /* Foundation.framework in Frameworks */,
+				CCE7E4D60BB81A3EB4E1811782B7A676 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FBF67A3664BACC6AC5CAF6C1D9BB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A66ECFD0F2BC1DDE3F726C7B9886F53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3ECE3230732548649159A76DDEC45FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38318D8D6CE0EA9EFCEC9503D12819F6 /* Foundation.framework in Frameworks */,
+				E05B4BF85D7C670A0B101247645DBA26 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0E536DDFF9FB563DDF8A826DC3D62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF93D61B98563DB9E315F2A7F417A561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02964AB30A1C3F0295A41E536C54EBF0 /* VNI */ = {
+			isa = PBXGroup;
+			children = (
+				43BC3E9A019455C37A1F76BC56F05717 /* VNI.swift */,
+				FEC1BC0653F3B3871629BE89425600D9 /* Pod */,
+				3AEFCADA294839C3F7CE536E6F4E3E12 /* Support Files */,
+			);
+			name = VNI;
+			path = ../Src/VNI;
+			sourceTree = "<group>";
+		};
+		1493EBF287B797A3331D6BFAEDF2A2E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				081FAE806F6D68B151460192DED320B7 /* VNServicesMocks.debug.xcconfig */,
+				3D8373FD6F7DD64E8B05FB3DF2D2C1A7 /* VNServicesMocks.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNServicesMocks";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		199B261EBAB058DD07E990A8964549AC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9DD6B67F190EC69491FDA4398142A0FF /* VNServicesMocks.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		19DF62D0BC9D0B0C26BEDD1D5E44DD4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C4326470C449AB586BB17760209C0FD /* Sourcery.debug.xcconfig */,
+				5BBC152A0D6A397C466C25AC448E2E59 /* Sourcery.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Sourcery";
+			sourceTree = "<group>";
+		};
+		25C3A9BE962C8A75D8AD4D80B303B1A7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E0515B9CAB7D6499BB8AA7812690766 /* VNCommon */,
+				02964AB30A1C3F0295A41E536C54EBF0 /* VNI */,
+				275C96F9B94BF8B7E7577516AE706D1C /* VNSearch */,
+				F6137D4E354F987E85F94F9A0A798B78 /* VNSearchInterfaces */,
+				2794C11969479B56E06DD473A9CF2885 /* VNSearchMocks */,
+				E6E53581E137026A8FEE908F957C9ADD /* VNServices */,
+				B6C145FBFDAFD610641032F7D9CE0511 /* VNServicesInterfaces */,
+				65CB100E7A671F346F336A9CEAE4262F /* VNServicesMocks */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		261D0ACDFEB54814406933F83886144B /* Sourcery */ = {
+			isa = PBXGroup;
+			children = (
+				19DF62D0BC9D0B0C26BEDD1D5E44DD4B /* Support Files */,
+			);
+			name = Sourcery;
+			path = Sourcery;
+			sourceTree = "<group>";
+		};
+		275C96F9B94BF8B7E7577516AE706D1C /* VNSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4CD958333CA5D97182087DB3C01AF135 /* Search.swift */,
+				C55EDBFE83D85EAAB10EB45345340535 /* Pod */,
+				DB567257046938F465D9AD532286831D /* Support Files */,
+			);
+			name = VNSearch;
+			path = ../Src/Search;
+			sourceTree = "<group>";
+		};
+		2794C11969479B56E06DD473A9CF2885 /* VNSearchMocks */ = {
+			isa = PBXGroup;
+			children = (
+				7A88F1D3CCD76DF2229C9D158FF60520 /* Pod */,
+				41D19F035B27FD21E1A499F0D09DF631 /* Support Files */,
+			);
+			name = VNSearchMocks;
+			path = ../Src/Search;
+			sourceTree = "<group>";
+		};
+		3374C876782C91DED4D97DB4A77E38C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7310F6E59769BB45BE6C080B943CA74 /* VNServices-framework.modulemap */,
+				27494B66DE0C107482491E1AADCE2898 /* VNServices-framework-dummy.m */,
+				54FAFF35B5797F79FC7C6E8E3CA22F4D /* VNServices-framework-Info.plist */,
+				4DC809005245415FE2FCC9C6C3694281 /* VNServices-framework-prefix.pch */,
+				8EA4C7E93EF1C2CE39E0C3B1DFCF6F40 /* VNServices-framework-umbrella.h */,
+				A93171B111AB282C9554DDE55F03BF05 /* VNServices-framework.debug.xcconfig */,
+				698695492F62640EFD861758D1DD8338 /* VNServices-framework.release.xcconfig */,
+				1E75E44B3293469F155DC9DF137CE453 /* VNServices-library.modulemap */,
+				3E2175F7931D4D6924C4271F3D4BE6CB /* VNServices-library-dummy.m */,
+				F4ED5E686A2B850F6A004C85AEA82F5D /* VNServices-library-prefix.pch */,
+				39A3D0D4C97E7D578563783F7EC76E92 /* VNServices-library-umbrella.h */,
+				84DB71C68085A0445766E11B16994AC6 /* VNServices-library.debug.xcconfig */,
+				623D05655FA774414A137C97B56467FA /* VNServices-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNServices-framework";
+			sourceTree = "<group>";
+		};
+		357AA206DFC8542F7BC5190D0A0848B6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DC04C730F775112810B6E3CF1D9A1FAC /* VNServicesInterfaces.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3AEFCADA294839C3F7CE536E6F4E3E12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99BEBB3956A5D4291E131F211EFD83C4 /* VNI.modulemap */,
+				EB3D8488035176C39A2F967FF0A7032D /* VNI-dummy.m */,
+				EAF1DACDC5F13A2A51D142CC782CA3DE /* VNI-Info.plist */,
+				287376AAAB73902ACF48C16F5904ACFB /* VNI-prefix.pch */,
+				18741BE56733D37C816900849FC81815 /* VNI-umbrella.h */,
+				5D6C3F0B3CE08E8EAC25DD620626F90A /* VNI.debug.xcconfig */,
+				06B35F7640666963F1E7F38C515B0175 /* VNI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNI";
+			sourceTree = "<group>";
+		};
+		41D19F035B27FD21E1A499F0D09DF631 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98F822E75CBDC5A9739F2FBDA8E963F8 /* VNSearchMocks.debug.xcconfig */,
+				A4F13E9520875AE0D4028E54CBCE8C65 /* VNSearchMocks.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNSearchMocks";
+			sourceTree = "<group>";
+		};
+		57285C378F908414F79B873E109341A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				261D0ACDFEB54814406933F83886144B /* Sourcery */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6466A547C6AD9E0BE6AD9F9A8C72558C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72B766840E636C683DACCE1FB567DD84 /* VNCommon-framework.modulemap */,
+				689C083E202347933CEE79AC42FF652D /* VNCommon-framework-dummy.m */,
+				3147FC3D0A3F73AB7F71F9801B977A20 /* VNCommon-framework-Info.plist */,
+				0660DDEDF36054ACD61F4B2B519C59ED /* VNCommon-framework-prefix.pch */,
+				D468ABCC30E41880A539EA20CE9437D6 /* VNCommon-framework-umbrella.h */,
+				B7815BABE17190632E7E65C90267149C /* VNCommon-framework.debug.xcconfig */,
+				47B953551B89CF65557BD1C38C188B8E /* VNCommon-framework.release.xcconfig */,
+				6F3F5785E0D2FB9ABFACC0A8D9485AC0 /* VNCommon-library.modulemap */,
+				1C0B62B8FB245E7569B1C608E63C8C2F /* VNCommon-library-dummy.m */,
+				CA81FD2013BA7827B4C2D4305FCEB630 /* VNCommon-library-prefix.pch */,
+				64E9D85046AF5A67F4956DFB8EE0D629 /* VNCommon-library-umbrella.h */,
+				222876D069B0A2D8D8A1A5787EED67B8 /* VNCommon-library.debug.xcconfig */,
+				08006BFB171252B12BA5F0395E5C0A0D /* VNCommon-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNCommon-framework";
+			sourceTree = "<group>";
+		};
+		655CA236AC5C2409792149B476521763 /* Pods-__demodeps-__demodepsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC7C8A9565FE642C8F6CC04D74B1AF15 /* Pods-__demodeps-__demodepsUITests.modulemap */,
+				C55BC91F078736069D0FE89A29524F29 /* Pods-__demodeps-__demodepsUITests-acknowledgements.markdown */,
+				9C15A5F6D837295A05E96B85A960A682 /* Pods-__demodeps-__demodepsUITests-acknowledgements.plist */,
+				3C5902CAB7DA25E004A293597D610F69 /* Pods-__demodeps-__demodepsUITests-dummy.m */,
+				8F2DBF17F2B26C3C9830FEE319278423 /* Pods-__demodeps-__demodepsUITests-frameworks.sh */,
+				F1D07682CB7E885EC6CF7B1C040253BA /* Pods-__demodeps-__demodepsUITests-Info.plist */,
+				91FB596BC184D59FDF105B2EC6B58E74 /* Pods-__demodeps-__demodepsUITests-umbrella.h */,
+				CC7D7EB85A63142B427F369F8D0B23B3 /* Pods-__demodeps-__demodepsUITests.debug.xcconfig */,
+				F3C447A6BD62A7D2983618261984DD8B /* Pods-__demodeps-__demodepsUITests.release.xcconfig */,
+			);
+			name = "Pods-__demodeps-__demodepsUITests";
+			path = "Target Support Files/Pods-__demodeps-__demodepsUITests";
+			sourceTree = "<group>";
+		};
+		65CB100E7A671F346F336A9CEAE4262F /* VNServicesMocks */ = {
+			isa = PBXGroup;
+			children = (
+				199B261EBAB058DD07E990A8964549AC /* Pod */,
+				1493EBF287B797A3331D6BFAEDF2A2E4 /* Support Files */,
+			);
+			name = VNServicesMocks;
+			path = ../Src/Services;
+			sourceTree = "<group>";
+		};
+		66430AAF3519CCFAFB549544A9B737B7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				996D061777CF433DAA5C3ED9FA092F25 /* Pods-__demodeps */,
+				655CA236AC5C2409792149B476521763 /* Pods-__demodeps-__demodepsUITests */,
+				ADC373EA5C78206EBA281B65CEEEC1CF /* Pods-__demodepsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7A88F1D3CCD76DF2229C9D158FF60520 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FE41E9FB23E55AB59CBC94D78C05CC09 /* VNSearchMocks.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DF44BF585BB7CD0D85744E3DA70FC63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD86650C19BFC3003212FFF0CC23304 /* VNSearchInterfaces-framework.modulemap */,
+				E5D38E95377F441BF1F7E2840058394F /* VNSearchInterfaces-framework-dummy.m */,
+				EB74D68F7419D596E92515651F934F1C /* VNSearchInterfaces-framework-Info.plist */,
+				BDD2324C752A0EFAF4AD8F1DFDE4F83F /* VNSearchInterfaces-framework-prefix.pch */,
+				5C7570FEDF591A70B94F23D61C442178 /* VNSearchInterfaces-framework-umbrella.h */,
+				315815BCC7373FD9BE0DF4B46B2697D2 /* VNSearchInterfaces-framework.debug.xcconfig */,
+				C8E972821791281F2FB7332AC3D51F07 /* VNSearchInterfaces-framework.release.xcconfig */,
+				86222EAD0EDE1957E319694126A95D86 /* VNSearchInterfaces-library.modulemap */,
+				5626149D8BAEF8F96DDC13089BB3D5DB /* VNSearchInterfaces-library-dummy.m */,
+				E71F553418FBDF658CC534A949FCADF3 /* VNSearchInterfaces-library-prefix.pch */,
+				920FEEBCC006CEFA9C51BE44F89DCAF1 /* VNSearchInterfaces-library-umbrella.h */,
+				2B568E1CE0234DD0F34748B843825686 /* VNSearchInterfaces-library.debug.xcconfig */,
+				846C6C353B928B1CF449A795BCF4EAFC /* VNSearchInterfaces-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNSearchInterfaces-framework";
+			sourceTree = "<group>";
+		};
+		87F75BB810168EC13C0446B3A49FC7EC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7628B47D28D54D918B2EDC7781E7F63A /* VNServices.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		97A3ED4B573E95A8F964F732FE9300A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7CF416287F644259593F3C60E02D7D10 /* VNCommon.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		996D061777CF433DAA5C3ED9FA092F25 /* Pods-__demodeps */ = {
+			isa = PBXGroup;
+			children = (
+				D1161BE1E3F585DBB2E9A54930674DA2 /* Pods-__demodeps.modulemap */,
+				412F968188BA9BD7048F150C51265292 /* Pods-__demodeps-acknowledgements.markdown */,
+				00088E0FB56869EFE51C6AE927FB9B15 /* Pods-__demodeps-acknowledgements.plist */,
+				77E47DE0BB284D65E15186D4EDC9303E /* Pods-__demodeps-dummy.m */,
+				1B16470A038863F866BCA89020457562 /* Pods-__demodeps-frameworks.sh */,
+				B4CF23877A9671A96AD00592E51D200B /* Pods-__demodeps-Info.plist */,
+				CB2DFC11E9237B92E7F0F68D83E729AB /* Pods-__demodeps-umbrella.h */,
+				62CC1816C8A45E5734B491AD425DE67F /* Pods-__demodeps.debug.xcconfig */,
+				86175099564AD83AC836DB7ED6B7D338 /* Pods-__demodeps.release.xcconfig */,
+			);
+			name = "Pods-__demodeps";
+			path = "Target Support Files/Pods-__demodeps";
+			sourceTree = "<group>";
+		};
+		9E0515B9CAB7D6499BB8AA7812690766 /* VNCommon */ = {
+			isa = PBXGroup;
+			children = (
+				0ECCAD27E30F631E5199AF55B6731CF3 /* Common.swift */,
+				97A3ED4B573E95A8F964F732FE9300A3 /* Pod */,
+				6466A547C6AD9E0BE6AD9F9A8C72558C /* Support Files */,
+			);
+			name = VNCommon;
+			path = ../Src/Common;
+			sourceTree = "<group>";
+		};
+		A208AD8C43BB967ECE7D7A3944C018BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D886294523D016CBABF6564A5B2A8F /* Pods-__demodeps */,
+				AA4E546AAA252DEBCCD262F3D91A27A6 /* Pods-__demodeps-__demodepsUITests */,
+				5ED891A600ED665D2FD149F52F315AEE /* Pods-__demodepsTests */,
+				E2FCD41C0AB7F35BC458F473318151F7 /* VNCommon-framework */,
+				0A1F806E5881E1E3F976EAC77BDB92A2 /* VNCommon-library */,
+				233A76B4A5995F766FE991327EAA85A3 /* VNI */,
+				C1BE50AA261CE1DC336FA43BE34F7926 /* VNSearch-framework */,
+				8D37EA4F79AB7C57FC96C35E4D8C043A /* VNSearch-library */,
+				35EF3A68AF98430454B24B3D2A6A84A0 /* VNSearchInterfaces-framework */,
+				723C228B708B2B0F126E758CF79C30D3 /* VNSearchInterfaces-library */,
+				1E1546DB3F45EBD7A2949AE8441C595D /* VNServices-framework */,
+				422F6C911E93AC398E4DBF673CD300EC /* VNServices-library */,
+				BD1FCDA22DCC7BEADCDF7C8C179CE54E /* VNServicesInterfaces-framework */,
+				618A5F882870D43EC358A4569F92A7E3 /* VNServicesInterfaces-library */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADC373EA5C78206EBA281B65CEEEC1CF /* Pods-__demodepsTests */ = {
+			isa = PBXGroup;
+			children = (
+				684FF965225F59B6C4749B7F3DA36451 /* Pods-__demodepsTests.modulemap */,
+				7254DC5073045F75449A5EEE8367B73A /* Pods-__demodepsTests-acknowledgements.markdown */,
+				10A0F9436D5D9E5BE617950D1F08F735 /* Pods-__demodepsTests-acknowledgements.plist */,
+				7BE15C953B645F23928F343D31739513 /* Pods-__demodepsTests-dummy.m */,
+				4800A72F07554FDC5BF244B75C03CB3D /* Pods-__demodepsTests-Info.plist */,
+				EE0CA7DCA3A7A5C0383731BA70F08D7E /* Pods-__demodepsTests-umbrella.h */,
+				B38563EFC07418349145449F86A4640A /* Pods-__demodepsTests.debug.xcconfig */,
+				477C556F65BED206C593E364AE8FDA4A /* Pods-__demodepsTests.release.xcconfig */,
+			);
+			name = "Pods-__demodepsTests";
+			path = "Target Support Files/Pods-__demodepsTests";
+			sourceTree = "<group>";
+		};
+		B6C145FBFDAFD610641032F7D9CE0511 /* VNServicesInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				7245255A89BDD3798F9C319C498A300E /* ServicesInterfaces.swift */,
+				357AA206DFC8542F7BC5190D0A0848B6 /* Pod */,
+				FDDC30DFD3BB28FEFDE4463AA7C5377C /* Support Files */,
+			);
+			name = VNServicesInterfaces;
+			path = ../Src/Services;
+			sourceTree = "<group>";
+		};
+		C55EDBFE83D85EAAB10EB45345340535 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C37C5F506F850FCF3EAF2776C23711C0 /* VNSearch.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				25C3A9BE962C8A75D8AD4D80B303B1A7 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				57285C378F908414F79B873E109341A6 /* Pods */,
+				A208AD8C43BB967ECE7D7A3944C018BB /* Products */,
+				66430AAF3519CCFAFB549544A9B737B7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB567257046938F465D9AD532286831D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E36A60D8B797335410D35CCDD9B5ACB /* VNSearch-framework.modulemap */,
+				B24A1C5D04BF45BF9DF86C06B9F4C4BD /* VNSearch-framework-dummy.m */,
+				B1BE31CD9CC3A566E706FFA479E2256E /* VNSearch-framework-Info.plist */,
+				CAC10406849A7E189BC58694E1225AA3 /* VNSearch-framework-prefix.pch */,
+				BA9BC4F3E4FEA8DAAE78AAD9BB6BE467 /* VNSearch-framework-umbrella.h */,
+				22AD8D51A21970A12FBF81C94D9DDB9B /* VNSearch-framework.debug.xcconfig */,
+				5AA4C0D19F29FF2339B262B7ACD31A37 /* VNSearch-framework.release.xcconfig */,
+				C657F5186B110C776724196ABFA8388A /* VNSearch-library.modulemap */,
+				3828F91CA9F73EC854D402C15A9E472D /* VNSearch-library-dummy.m */,
+				E3ACE4EBACDC0505573FBC7B366156FB /* VNSearch-library-prefix.pch */,
+				292ADA7FF51A12D82B435EF00426B016 /* VNSearch-library-umbrella.h */,
+				2D5D0E96D1786E9607D168C2110AA022 /* VNSearch-library.debug.xcconfig */,
+				4EA074E2945D74CC5139EA0AE31FFE27 /* VNSearch-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNSearch-framework";
+			sourceTree = "<group>";
+		};
+		E0ECC98C8637D9621F79529CB08A89B2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6B4487E9972961DE448E0EEF8D1D4E41 /* VNSearchInterfaces.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E6E53581E137026A8FEE908F957C9ADD /* VNServices */ = {
+			isa = PBXGroup;
+			children = (
+				36AAAD60694F06915AD8D5784B7E43CA /* Services.swift */,
+				87F75BB810168EC13C0446B3A49FC7EC /* Pod */,
+				3374C876782C91DED4D97DB4A77E38C8 /* Support Files */,
+			);
+			name = VNServices;
+			path = ../Src/Services;
+			sourceTree = "<group>";
+		};
+		F6137D4E354F987E85F94F9A0A798B78 /* VNSearchInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				558C861CE7CA4F0848B933BE5833377A /* SearchInterfaces.swift */,
+				E0ECC98C8637D9621F79529CB08A89B2 /* Pod */,
+				7DF44BF585BB7CD0D85744E3DA70FC63 /* Support Files */,
+			);
+			name = VNSearchInterfaces;
+			path = ../Src/Search;
+			sourceTree = "<group>";
+		};
+		FDDC30DFD3BB28FEFDE4463AA7C5377C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F995E4B6247F9F1C95F90A047C48B32 /* VNServicesInterfaces-framework.modulemap */,
+				9A592024294FC5E03624595CF3BF501E /* VNServicesInterfaces-framework-dummy.m */,
+				D016B16CFB050B00EE079872EE91B3CA /* VNServicesInterfaces-framework-Info.plist */,
+				CF0F9CEAE24A14C31203203AF702BFB0 /* VNServicesInterfaces-framework-prefix.pch */,
+				B775522B580FEB29B909228174CDFFF2 /* VNServicesInterfaces-framework-umbrella.h */,
+				87DD6CBB8B2C5CD0FCB00B8391AE8ED8 /* VNServicesInterfaces-framework.debug.xcconfig */,
+				81C16F58299BD9B17F78C2AA35D0E6AE /* VNServicesInterfaces-framework.release.xcconfig */,
+				15661005969200355C89F7FD58A8C003 /* VNServicesInterfaces-library.modulemap */,
+				744C7B01F88760800CEEA1742AD4F230 /* VNServicesInterfaces-library-dummy.m */,
+				2CBCC6BA78A66EF83B166A64B1707324 /* VNServicesInterfaces-library-prefix.pch */,
+				5CD792865FF4EC5FB945F080EDFD41D0 /* VNServicesInterfaces-library-umbrella.h */,
+				6DF0F7A50E81EDA643FF5045044A7692 /* VNServicesInterfaces-library.debug.xcconfig */,
+				3BEC805E73E864815027825671F6DDE8 /* VNServicesInterfaces-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/VNServicesInterfaces-framework";
+			sourceTree = "<group>";
+		};
+		FEC1BC0653F3B3871629BE89425600D9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				668AE76E6A23A6B2B3D756E540468718 /* VNI.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E472A1415EEC622F9099F34009D61C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54DA424A764C5B67738E305427C11DD /* VNSearch-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158D851292F6A64910834A499A54DE8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300BCF30267F7729F7294B7550CE51E8 /* Pods-__demodeps-__demodepsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B7EE7FE3AFD4BBE37E6BD0B7FF51AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A2B027A1322D5282005BC53176153F /* VNServicesInterfaces-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4581FB08BFD740E2D6581D9D46D83277 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4809D7C88BD106EAF4618AEBDF148D45 /* VNSearchInterfaces-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D95BB6A677B0914D42945CD98640C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E31DC5E4E0CE2C9DCECAC1F7949E3C /* VNI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDD5B1197B9DE61FD112C4F6136755A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57CECAF58DD06F3CB0BE618961E759B /* Pods-__demodeps-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8984475D15480E5D4A952C7B3E1CAA56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911FEFA2DB0E82B70D0FB1959D97612A /* VNSearchInterfaces-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D4CBB55D521D78AEC4F4DF93E4B7B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89799F737378FAA18C7597773CD4DBFD /* VNServices-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEDD56D939F108AD92294604188877 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649CEB9F26C66FC57A2A22964CAD3C4F /* VNCommon-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F2D6E440A9F8CF8F086E9ECCFC9E03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B741A368292E4E93162B795B5A8A9C /* VNServicesInterfaces-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4ED327829CA7CF99420C68A7B8462F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655A5191C743D69EDB71B406445A40C7 /* VNSearch-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75F14F322994095D0C42C982D3D4AAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612BB06BC700682F5A7E95EAB048119E /* Pods-__demodepsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CB41D5495E856FD591EB5D823A4B60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3B298FE39CFB787E06CE277C15C264 /* VNCommon-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4FD60A19F28D34123A9E125BB02DE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30888E63F63E9AD5F95553EBDD54A404 /* VNServices-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3209B3CA27A4650410CE180EEF9145FE /* VNI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D63FED897474E5D6DF3B76208ABD2AD /* Build configuration list for PBXNativeTarget "VNI" */;
+			buildPhases = (
+				53D95BB6A677B0914D42945CD98640C9 /* Headers */,
+				9634B8EDC5D8D2C23A50F7842AFAA59A /* Sources */,
+				2023A91F525723F1CEFF561FD4073D8A /* Frameworks */,
+				96F2D7C5E9F5637EE26FAB49BB320D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA569EDAE2A8F2C64A3715F42B508AA2 /* PBXTargetDependency */,
+				380EB0A6F8BA3E280277BB38B2FC3A3A /* PBXTargetDependency */,
+			);
+			name = VNI;
+			productName = VNI;
+			productReference = 233A76B4A5995F766FE991327EAA85A3 /* VNI */;
+			productType = "com.apple.product-type.framework";
+		};
+		412B3690BB110DAE5E712BAA3BF47C95 /* VNServicesInterfaces-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB027B137BBE811D90606B954BD3003F /* Build configuration list for PBXNativeTarget "VNServicesInterfaces-library" */;
+			buildPhases = (
+				A6F2D6E440A9F8CF8F086E9ECCFC9E03 /* Headers */,
+				4203D8F1E681D627406C9A84E4DED24A /* Sources */,
+				DF0E536DDFF9FB563DDF8A826DC3D62F /* Frameworks */,
+				68C9AB3CE364029302B1BD3AF6755E70 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3EDC55326A124F9DF173F762775A15 /* PBXTargetDependency */,
+			);
+			name = "VNServicesInterfaces-library";
+			productName = "VNServicesInterfaces-library";
+			productReference = 618A5F882870D43EC358A4569F92A7E3 /* VNServicesInterfaces-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		59A2B27FC5E417202EB05C443A41D336 /* VNServices-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2D29F2EBF1976C0D4E10345B992051 /* Build configuration list for PBXNativeTarget "VNServices-framework" */;
+			buildPhases = (
+				91D4CBB55D521D78AEC4F4DF93E4B7B8 /* Headers */,
+				3ECDDE7DAF03D3ABB7577A93775C63F7 /* Sources */,
+				1995ACCDBEA364745B506F7703C481EB /* Frameworks */,
+				E0D170885C8C672B640B8A688C0D0E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2E69E92C9B7781C4BA6B244B1253B7 /* PBXTargetDependency */,
+				AEC6EE46540BCBCF4A3F1EF5B1CA70AF /* PBXTargetDependency */,
+				E38A74C1DFDB422E7783DA0FDB335C2D /* PBXTargetDependency */,
+			);
+			name = "VNServices-framework";
+			productName = VNServices;
+			productReference = 1E1546DB3F45EBD7A2949AE8441C595D /* VNServices-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C5BC4936873C877020D723A871B2D28 /* Pods-__demodeps-__demodepsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFAD46FF75D19CD36DBB85EACAD889F /* Build configuration list for PBXNativeTarget "Pods-__demodeps-__demodepsUITests" */;
+			buildPhases = (
+				158D851292F6A64910834A499A54DE8B /* Headers */,
+				68CB82772CC2CD728E4E9D1B2ED54288 /* Sources */,
+				93FBF67A3664BACC6AC5CAF6C1D9BB12 /* Frameworks */,
+				137C4CA33EADBAC62D103A8AE15A5AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304773B89A67BEA58E708E2B5E0B5E67 /* PBXTargetDependency */,
+				1475FDEC4178444200EA3689C391068F /* PBXTargetDependency */,
+				A1EB59ADD737362B46410A094AE7F605 /* PBXTargetDependency */,
+				EAD25B0246FF17DE0D8ED5FB42802DBB /* PBXTargetDependency */,
+				EB1DCE44116B9AA30BF5808BFADD68FA /* PBXTargetDependency */,
+				D1559797126C58561584B26218417850 /* PBXTargetDependency */,
+			);
+			name = "Pods-__demodeps-__demodepsUITests";
+			productName = Pods___demodeps___demodepsUITests;
+			productReference = AA4E546AAA252DEBCCD262F3D91A27A6 /* Pods-__demodeps-__demodepsUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		92AAA25FB12B86893AE1B69826D5F6A2 /* VNSearch-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4FF50F27D5C07E3443340D26C4035F6 /* Build configuration list for PBXNativeTarget "VNSearch-library" */;
+			buildPhases = (
+				D4ED327829CA7CF99420C68A7B8462F0 /* Headers */,
+				923799883CDB9608891EBDACE9E80FEA /* Sources */,
+				39BA2404A016695AFCAEBF91E9B1FDF6 /* Frameworks */,
+				B505C89E18A9799AEF2E8EAD50AF2245 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD9984124D043C5093D81B6B5F64A1D3 /* PBXTargetDependency */,
+				AA557155C26B4103ABE8EA08E383ED2F /* PBXTargetDependency */,
+				DB360B23E867F1FF244DF9E87F23092E /* PBXTargetDependency */,
+			);
+			name = "VNSearch-library";
+			productName = "VNSearch-library";
+			productReference = 8D37EA4F79AB7C57FC96C35E4D8C043A /* VNSearch-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		972E1F798DB23B1AAFFEEBA614D5314E /* VNSearch-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9811361E0300DC97890EC57891AFDA2 /* Build configuration list for PBXNativeTarget "VNSearch-framework" */;
+			buildPhases = (
+				0E472A1415EEC622F9099F34009D61C6 /* Headers */,
+				30619B095EF308A902299C4050D55599 /* Sources */,
+				5427297867A7A01ABF823902685FECF7 /* Frameworks */,
+				BF81F76B0B1BFBC2DE338592E141A95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4821176E5592C11E3AC14CD5382DD09 /* PBXTargetDependency */,
+				1A2562A681C5568603E9B27101349AB7 /* PBXTargetDependency */,
+				8EAE778242868BADF5359BB86EDC9889 /* PBXTargetDependency */,
+			);
+			name = "VNSearch-framework";
+			productName = VNSearch;
+			productReference = C1BE50AA261CE1DC336FA43BE34F7926 /* VNSearch-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B0D445D91F4625067826AE02C6B68D5 /* VNServices-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7685521AD1A446A3CE705BF9AF97F2D /* Build configuration list for PBXNativeTarget "VNServices-library" */;
+			buildPhases = (
+				FA4FD60A19F28D34123A9E125BB02DE2 /* Headers */,
+				7CDB84108804B5151E82CA3012F424F6 /* Sources */,
+				FF93D61B98563DB9E315F2A7F417A561 /* Frameworks */,
+				4368D87A4A11184975D6F829F45EF530 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				736A6EB4B74EB6F121A354FD33604DE7 /* PBXTargetDependency */,
+				B0E217222DAB8FE5C8ABEBEC2491F5ED /* PBXTargetDependency */,
+				630FEB329E6BE734DE9637FB9B8308A4 /* PBXTargetDependency */,
+			);
+			name = "VNServices-library";
+			productName = "VNServices-library";
+			productReference = 422F6C911E93AC398E4DBF673CD300EC /* VNServices-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C8BD7EC751262EED3A09B88019CD09 /* Build configuration list for PBXNativeTarget "VNServicesInterfaces-framework" */;
+			buildPhases = (
+				37B7EE7FE3AFD4BBE37E6BD0B7FF51AD /* Headers */,
+				5804028FBDE4659E564A62A034D3C931 /* Sources */,
+				043AA3D23D98D94D94B4F1D0FC2A3D88 /* Frameworks */,
+				9027FCAE1ED02A2716657C03086DE2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375F0E8ED36C236D31422DF9E15F68C5 /* PBXTargetDependency */,
+			);
+			name = "VNServicesInterfaces-framework";
+			productName = VNServicesInterfaces;
+			productReference = BD1FCDA22DCC7BEADCDF7C8C179CE54E /* VNServicesInterfaces-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8EE85CE9DC254235075EC405F264FD1 /* Pods-__demodeps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDD931D4FAFDFEB26C21E231176878F /* Build configuration list for PBXNativeTarget "Pods-__demodeps" */;
+			buildPhases = (
+				5CDD5B1197B9DE61FD112C4F6136755A /* Headers */,
+				40C7330A04D1E94C0480C72362EC0E1D /* Sources */,
+				279122FDAB37AA79BBFEF7BAE29BE714 /* Frameworks */,
+				5C18246204AF2F16F79D68D3EC8B62DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29F7D4EECCC87352C7BB0FE227DFAA20 /* PBXTargetDependency */,
+				EB287522F486674B1D7E097A6188C5A5 /* PBXTargetDependency */,
+				6F4894714201698437C19C094DDE1412 /* PBXTargetDependency */,
+				1DA5DEBBB66BEAD7C5B73B74FCA51867 /* PBXTargetDependency */,
+				1AFB304ECC19F8B3B2DF347C1FD1F30C /* PBXTargetDependency */,
+				7387E468674F728DBCE97CD3FE54A372 /* PBXTargetDependency */,
+			);
+			name = "Pods-__demodeps";
+			productName = Pods___demodeps;
+			productReference = 79D886294523D016CBABF6564A5B2A8F /* Pods-__demodeps */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1820960205A2653811E498A5FB4AAB3C /* Build configuration list for PBXNativeTarget "VNCommon-framework" */;
+			buildPhases = (
+				99CEDD56D939F108AD92294604188877 /* Headers */,
+				0338E1A4073F35C9118D0DDDC89503A5 /* Sources */,
+				902470CB8459ED983AD7515D5AE5CE39 /* Frameworks */,
+				911229FE246E8FE338435904FB82EC2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VNCommon-framework";
+			productName = VNCommon;
+			productReference = E2FCD41C0AB7F35BC458F473318151F7 /* VNCommon-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2D9C8DB0CC2C2BBC7CA6D676604C973 /* Pods-__demodepsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCA187E3F103924B23484FA11ECE28E /* Build configuration list for PBXNativeTarget "Pods-__demodepsTests" */;
+			buildPhases = (
+				E75F14F322994095D0C42C982D3D4AAF /* Headers */,
+				B9E60A588D34D7DB002EBFE229CE2AE1 /* Sources */,
+				143B1292433BFC60A23876C4883751F9 /* Frameworks */,
+				B031E05016D471DF8760F8C7C979292E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38C64260E2ED9F0B2BF58AF14D3D9AE3 /* PBXTargetDependency */,
+			);
+			name = "Pods-__demodepsTests";
+			productName = Pods___demodepsTests;
+			productReference = 5ED891A600ED665D2FD149F52F315AEE /* Pods-__demodepsTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E02D063FC109680EA8D0094AC419BC7B /* VNSearchInterfaces-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D6B5E36C46965CADF9D196CAAAAF12 /* Build configuration list for PBXNativeTarget "VNSearchInterfaces-library" */;
+			buildPhases = (
+				8984475D15480E5D4A952C7B3E1CAA56 /* Headers */,
+				B622EE263396B5261A62F9774D774031 /* Sources */,
+				416493D55BE2379713A46DCC38E003AA /* Frameworks */,
+				6F86F0703D76DA5FEA2E3B4A78CC2C9F /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE7CB0CA3EAFC27EA79F5E023334A1E /* PBXTargetDependency */,
+			);
+			name = "VNSearchInterfaces-library";
+			productName = "VNSearchInterfaces-library";
+			productReference = 723C228B708B2B0F126E758CF79C30D3 /* VNSearchInterfaces-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D636A3C94C237B9257C2A94B611501C8 /* Build configuration list for PBXNativeTarget "VNSearchInterfaces-framework" */;
+			buildPhases = (
+				4581FB08BFD740E2D6581D9D46D83277 /* Headers */,
+				B3D2A09244D494149C90BA6442B5CFA5 /* Sources */,
+				B3ECE3230732548649159A76DDEC45FA /* Frameworks */,
+				DB1AA01B02280CF117B0D9496179D07F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				600172BEC78E538C2D6D817D2B84700B /* PBXTargetDependency */,
+			);
+			name = "VNSearchInterfaces-framework";
+			productName = VNSearchInterfaces;
+			productReference = 35EF3A68AF98430454B24B3D2A6A84A0 /* VNSearchInterfaces-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0A1C8C262AED5B255D9B25FCF33121 /* Build configuration list for PBXNativeTarget "VNCommon-library" */;
+			buildPhases = (
+				F3CB41D5495E856FD591EB5D823A4B60 /* Headers */,
+				436775467667BB222F81D7382DC81F99 /* Sources */,
+				854EDC745DBF0CE1CC96B15958FDD941 /* Frameworks */,
+				91D27B5EB082B1DE906A9F3336270299 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VNCommon-library";
+			productName = "VNCommon-library";
+			productReference = 0A1F806E5881E1E3F976EAC77BDB92A2 /* VNCommon-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A208AD8C43BB967ECE7D7A3944C018BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8EE85CE9DC254235075EC405F264FD1 /* Pods-__demodeps */,
+				8C5BC4936873C877020D723A871B2D28 /* Pods-__demodeps-__demodepsUITests */,
+				D2D9C8DB0CC2C2BBC7CA6D676604C973 /* Pods-__demodepsTests */,
+				4D8229B0397AE8C2F7C11B3F9EFC9362 /* Sourcery */,
+				CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */,
+				EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */,
+				3209B3CA27A4650410CE180EEF9145FE /* VNI */,
+				972E1F798DB23B1AAFFEEBA614D5314E /* VNSearch-framework */,
+				92AAA25FB12B86893AE1B69826D5F6A2 /* VNSearch-library */,
+				E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */,
+				E02D063FC109680EA8D0094AC419BC7B /* VNSearchInterfaces-library */,
+				9BD12465FA405DA7E49EEB8F5B2CDB36 /* VNSearchMocks */,
+				59A2B27FC5E417202EB05C443A41D336 /* VNServices-framework */,
+				9B0D445D91F4625067826AE02C6B68D5 /* VNServices-library */,
+				B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */,
+				412B3690BB110DAE5E712BAA3BF47C95 /* VNServicesInterfaces-library */,
+				F850D3ACDC0F67CB7052553947159FA9 /* VNServicesMocks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		137C4CA33EADBAC62D103A8AE15A5AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C18246204AF2F16F79D68D3EC8B62DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9027FCAE1ED02A2716657C03086DE2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911229FE246E8FE338435904FB82EC2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F2D7C5E9F5637EE26FAB49BB320D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B031E05016D471DF8760F8C7C979292E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF81F76B0B1BFBC2DE338592E141A95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1AA01B02280CF117B0D9496179D07F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D170885C8C672B640B8A688C0D0E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4368D87A4A11184975D6F829F45EF530 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VNServices/VNServices-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/VNServices/VNServices-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VNServices-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNServices/VNServices-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNServices/VNServices-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		68C9AB3CE364029302B1BD3AF6755E70 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VNServicesInterfaces-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		6F86F0703D76DA5FEA2E3B4A78CC2C9F /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VNSearchInterfaces-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		91D27B5EB082B1DE906A9F3336270299 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VNCommon/VNCommon-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/VNCommon/VNCommon-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VNCommon-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNCommon/VNCommon-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNCommon/VNCommon-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		B505C89E18A9799AEF2E8EAD50AF2245 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VNSearch/VNSearch-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/VNSearch/VNSearch-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VNSearch-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNSearch/VNSearch-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VNSearch/VNSearch-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0338E1A4073F35C9118D0DDDC89503A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC111BB5B33DDA9A174E8B1E2BB8D0B /* Common.swift in Sources */,
+				B85DD766B8C8965F610628C983B2CE1F /* VNCommon-framework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30619B095EF308A902299C4050D55599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D004887B48122C658898C7CCDDE637 /* Search.swift in Sources */,
+				845674E86598B17193E620B8316A9AF2 /* VNSearch-framework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ECDDE7DAF03D3ABB7577A93775C63F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46F0A5F67CF9AE800C271BED14E88B0 /* Services.swift in Sources */,
+				2608BD430FCADBC56FA1DF98A97E6E97 /* VNServices-framework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C7330A04D1E94C0480C72362EC0E1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDB927DCBF338A81153A465CF0FE38B /* Pods-__demodeps-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4203D8F1E681D627406C9A84E4DED24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC85D2E279ADF393B9CE2EA1EA77ADE /* ServicesInterfaces.swift in Sources */,
+				C68391D41D2DB06CB0BE663A05196D52 /* VNServicesInterfaces-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		436775467667BB222F81D7382DC81F99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1464447A497BF9D543A578BD343A71C4 /* Common.swift in Sources */,
+				65D6B49CEC7BB4D1A7CD537F0056C26B /* VNCommon-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804028FBDE4659E564A62A034D3C931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E955ABB1C1A4F8616B9A27C773A503 /* ServicesInterfaces.swift in Sources */,
+				D9BBA1069AFF3DE5A21620F78D0AB93C /* VNServicesInterfaces-framework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CB82772CC2CD728E4E9D1B2ED54288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FE272C9E6C6077341C6CC67AFC4DC1 /* Pods-__demodeps-__demodepsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDB84108804B5151E82CA3012F424F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642429A771C03F484AD5216BF068358A /* Services.swift in Sources */,
+				511E84186F215D54B7FCA3B35101D5BD /* VNServices-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923799883CDB9608891EBDACE9E80FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA8BEB45D417BC9735092021032E3B4 /* Search.swift in Sources */,
+				2957D144EF7DCC58384938383D6202CC /* VNSearch-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634B8EDC5D8D2C23A50F7842AFAA59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E93C853D30C0899E4DAEFC1ADD5C52 /* VNI.swift in Sources */,
+				1DD32297AD83E0B069921B76C25650ED /* VNI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D2A09244D494149C90BA6442B5CFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B47E992C02C8C1CB298C6EA01AADEEE /* SearchInterfaces.swift in Sources */,
+				E9EDACEE46001DA18ABC6D165365A162 /* VNSearchInterfaces-framework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B622EE263396B5261A62F9774D774031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1906941605E545911251323770E6C5 /* SearchInterfaces.swift in Sources */,
+				DC49C4AE6D747DDFFE0411BE6BBAEAFF /* VNSearchInterfaces-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E60A588D34D7DB002EBFE229CE2AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE768903242F22CE2CD74919883CB9D /* Pods-__demodepsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1475FDEC4178444200EA3689C391068F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VNI;
+			target = 3209B3CA27A4650410CE180EEF9145FE /* VNI */;
+			targetProxy = 08D653FCE9DE1B099C09C52FFD614CBA /* PBXContainerItemProxy */;
+		};
+		1A2562A681C5568603E9B27101349AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-framework";
+			target = E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */;
+			targetProxy = 0519963BFADEA6F6C0800765716FBF19 /* PBXContainerItemProxy */;
+		};
+		1AFB304ECC19F8B3B2DF347C1FD1F30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServices-framework";
+			target = 59A2B27FC5E417202EB05C443A41D336 /* VNServices-framework */;
+			targetProxy = 72DA6C4A61CB5A355B3BB907DF852875 /* PBXContainerItemProxy */;
+		};
+		1DA5DEBBB66BEAD7C5B73B74FCA51867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-framework";
+			target = E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */;
+			targetProxy = F7A23B1722FB6022A851C557AE8057BE /* PBXContainerItemProxy */;
+		};
+		29F7D4EECCC87352C7BB0FE227DFAA20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = 7BD21EFA4111D8F11EFE4C812AAFE75F /* PBXContainerItemProxy */;
+		};
+		304773B89A67BEA58E708E2B5E0B5E67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = CAA96A9DAFCFBCFE475D7776604E1D5E /* PBXContainerItemProxy */;
+		};
+		375F0E8ED36C236D31422DF9E15F68C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = 8146EC18FD794F5B62F07CE0F4E61A43 /* PBXContainerItemProxy */;
+		};
+		380EB0A6F8BA3E280277BB38B2FC3A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServices-framework";
+			target = 59A2B27FC5E417202EB05C443A41D336 /* VNServices-framework */;
+			targetProxy = F40FAAA738D7890008FBAD99D5215568 /* PBXContainerItemProxy */;
+		};
+		38C64260E2ED9F0B2BF58AF14D3D9AE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-__demodeps";
+			target = B8EE85CE9DC254235075EC405F264FD1 /* Pods-__demodeps */;
+			targetProxy = 9775ADAEF31E2BC5BB5A7EBAF6B2FB51 /* PBXContainerItemProxy */;
+		};
+		465BC3048FEFD69C8060F71FACD86F0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-library";
+			target = 412B3690BB110DAE5E712BAA3BF47C95 /* VNServicesInterfaces-library */;
+			targetProxy = CB5B9428911CD199B5CE487A18BE9CFE /* PBXContainerItemProxy */;
+		};
+		600172BEC78E538C2D6D817D2B84700B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = B8FEE50E2F5D82777B8E2DDBC703081B /* PBXContainerItemProxy */;
+		};
+		630FEB329E6BE734DE9637FB9B8308A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-library";
+			target = 412B3690BB110DAE5E712BAA3BF47C95 /* VNServicesInterfaces-library */;
+			targetProxy = FA045E1A59FAAA075C4801F314BB50FB /* PBXContainerItemProxy */;
+		};
+		6EC2128453CF9B70FE4D3F383A4486CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-library";
+			target = E02D063FC109680EA8D0094AC419BC7B /* VNSearchInterfaces-library */;
+			targetProxy = F72A39BB771C0655A4FB3FAC1C13DCC6 /* PBXContainerItemProxy */;
+		};
+		6F4894714201698437C19C094DDE1412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearch-framework";
+			target = 972E1F798DB23B1AAFFEEBA614D5314E /* VNSearch-framework */;
+			targetProxy = 937C263512E93659AFB797194E5B1120 /* PBXContainerItemProxy */;
+		};
+		736A6EB4B74EB6F121A354FD33604DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-library";
+			target = EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */;
+			targetProxy = 6A964510B96D4877CA9A5F1D65B13412 /* PBXContainerItemProxy */;
+		};
+		7387E468674F728DBCE97CD3FE54A372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-framework";
+			target = B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */;
+			targetProxy = A71868E285AA0EEA89BCC2792B3B136B /* PBXContainerItemProxy */;
+		};
+		8EAE778242868BADF5359BB86EDC9889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-framework";
+			target = B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */;
+			targetProxy = E43ECA4D7913554875CB4681018B5093 /* PBXContainerItemProxy */;
+		};
+		8F2E69E92C9B7781C4BA6B244B1253B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = 988A7EC43D3B6A4A1A94CB4BD303DFCB /* PBXContainerItemProxy */;
+		};
+		A1EB59ADD737362B46410A094AE7F605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearch-framework";
+			target = 972E1F798DB23B1AAFFEEBA614D5314E /* VNSearch-framework */;
+			targetProxy = 5D49F2E06E529CB6918DBEE34320571A /* PBXContainerItemProxy */;
+		};
+		AA3EDC55326A124F9DF173F762775A15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-library";
+			target = EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */;
+			targetProxy = AF51408DC107E74AD18AA4A55AA749CE /* PBXContainerItemProxy */;
+		};
+		AA557155C26B4103ABE8EA08E383ED2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-library";
+			target = E02D063FC109680EA8D0094AC419BC7B /* VNSearchInterfaces-library */;
+			targetProxy = 11802AD7FC6B637D11C79E3414526C0B /* PBXContainerItemProxy */;
+		};
+		AEC6EE46540BCBCF4A3F1EF5B1CA70AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-framework";
+			target = E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */;
+			targetProxy = 793C829324EFAF19066FD7C34A834736 /* PBXContainerItemProxy */;
+		};
+		B0E217222DAB8FE5C8ABEBEC2491F5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-library";
+			target = E02D063FC109680EA8D0094AC419BC7B /* VNSearchInterfaces-library */;
+			targetProxy = 51EA6B58F4476FED82F8FCA78AC70668 /* PBXContainerItemProxy */;
+		};
+		BD9984124D043C5093D81B6B5F64A1D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-library";
+			target = EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */;
+			targetProxy = 71CEAA60AEE93256408C0F09ABBC66F6 /* PBXContainerItemProxy */;
+		};
+		D1559797126C58561584B26218417850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-framework";
+			target = B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */;
+			targetProxy = 8D350FD7740935B3D04ED862947E21AD /* PBXContainerItemProxy */;
+		};
+		DB360B23E867F1FF244DF9E87F23092E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-library";
+			target = 412B3690BB110DAE5E712BAA3BF47C95 /* VNServicesInterfaces-library */;
+			targetProxy = E13DD4E5C3306CB23C112138F6AC4D52 /* PBXContainerItemProxy */;
+		};
+		E38A74C1DFDB422E7783DA0FDB335C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServicesInterfaces-framework";
+			target = B07D8B02B26C1CE2F787063AC4FF54B6 /* VNServicesInterfaces-framework */;
+			targetProxy = 0E3CC2C7977FA8F5DFD0582E073E9A8B /* PBXContainerItemProxy */;
+		};
+		EA569EDAE2A8F2C64A3715F42B508AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearch-framework";
+			target = 972E1F798DB23B1AAFFEEBA614D5314E /* VNSearch-framework */;
+			targetProxy = 60B9D898B2DC32D6B2C7213FD5313F41 /* PBXContainerItemProxy */;
+		};
+		EAD25B0246FF17DE0D8ED5FB42802DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNSearchInterfaces-framework";
+			target = E58C1B22ADB67AB1135A687F32FC35DA /* VNSearchInterfaces-framework */;
+			targetProxy = 652BB7D6644D88195B777AE3676CAACC /* PBXContainerItemProxy */;
+		};
+		EB1DCE44116B9AA30BF5808BFADD68FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNServices-framework";
+			target = 59A2B27FC5E417202EB05C443A41D336 /* VNServices-framework */;
+			targetProxy = F2DDB3EF16615C12D84F48F74AB7092E /* PBXContainerItemProxy */;
+		};
+		EB287522F486674B1D7E097A6188C5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VNI;
+			target = 3209B3CA27A4650410CE180EEF9145FE /* VNI */;
+			targetProxy = 70EFEE97B4F95C8B797B581EAF378500 /* PBXContainerItemProxy */;
+		};
+		F4821176E5592C11E3AC14CD5382DD09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-framework";
+			target = CF5003A371683E77467016FF163EBF2D /* VNCommon-framework */;
+			targetProxy = F7213721BB243D33E8E32EE8E7004634 /* PBXContainerItemProxy */;
+		};
+		FCE7CB0CA3EAFC27EA79F5E023334A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VNCommon-library";
+			target = EFB8BC01A79D711373F68DB636FB5FAC /* VNCommon-library */;
+			targetProxy = 57E031FF6B866021AEC81848CB7E271C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FFB88D1317CE1D3111A4EB250BE00EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C447A6BD62A7D2983618261984DD8B /* Pods-__demodeps-__demodepsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodeps-__demodepsUITests/Pods-__demodeps-__demodepsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodeps-__demodepsUITests/Pods-__demodeps-__demodepsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11C795314232D9D0D95AD8C8704EA215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6C3F0B3CE08E8EAC25DD620626F90A /* VNI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNI/VNI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNI/VNI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNI/VNI.modulemap";
+				PRODUCT_MODULE_NAME = VNI;
+				PRODUCT_NAME = VNI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13F530B6EB7B604745C9D1E54E598593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CC1816C8A45E5734B491AD425DE67F /* Pods-__demodeps.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodeps/Pods-__demodeps-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodeps/Pods-__demodeps.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22087E10A7202F608A7351F9E6ADEC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081FAE806F6D68B151460192DED320B7 /* VNServicesMocks.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3366F6021A1576F91E48EB414630DAC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7D7EB85A63142B427F369F8D0B23B3 /* Pods-__demodeps-__demodepsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodeps-__demodepsUITests/Pods-__demodeps-__demodepsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodeps-__demodepsUITests/Pods-__demodeps-__demodepsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38C10DD933B50C814A36E6CBFBE9642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698695492F62640EFD861758D1DD8338 /* VNServices-framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServices-framework/VNServices-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNServices-framework/VNServices-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNServices-framework/VNServices-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNServices;
+				PRODUCT_NAME = VNServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4325979F2DBA9B3216AD3F9B33729927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F822E75CBDC5A9739F2FBDA8E963F8 /* VNSearchMocks.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46105ACD825773811C68CFACB89C99B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF0F7A50E81EDA643FF5045044A7692 /* VNServicesInterfaces-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServicesInterfaces-library/VNServicesInterfaces-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNServicesInterfaces;
+				PRODUCT_NAME = "VNServicesInterfaces-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B80D3E66E3F51F762FCFD2E06ADE73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA4C0D19F29FF2339B262B7ACD31A37 /* VNSearch-framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearch-framework/VNSearch-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNSearch-framework/VNSearch-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNSearch-framework/VNSearch-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNSearch;
+				PRODUCT_NAME = VNSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		512ECE3495759C4ED7EBE82BB4A82979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DB71C68085A0445766E11B16994AC6 /* VNServices-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServices-library/VNServices-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNServices/VNServices-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNServices;
+				PRODUCT_NAME = "VNServices-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6DC43A4C839C9C894C2DF005B34979C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87DD6CBB8B2C5CD0FCB00B8391AE8ED8 /* VNServicesInterfaces-framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNServicesInterfaces;
+				PRODUCT_NAME = VNServicesInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FEBF46EED384A099FEA3F7304CFF90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477C556F65BED206C593E364AE8FDA4A /* Pods-__demodepsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodepsTests/Pods-__demodepsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodepsTests/Pods-__demodepsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74D4A7C9CAF0A4644FF377CC994ED5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222876D069B0A2D8D8A1A5787EED67B8 /* VNCommon-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNCommon-library/VNCommon-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNCommon/VNCommon-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNCommon;
+				PRODUCT_NAME = "VNCommon-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75E6A97E57B770926CE80BCB65043143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623D05655FA774414A137C97B56467FA /* VNServices-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServices-library/VNServices-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNServices/VNServices-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNServices;
+				PRODUCT_NAME = "VNServices-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BEA315DDFD3E0ADDB1C0147930D2E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E972821791281F2FB7332AC3D51F07 /* VNSearchInterfaces-framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNSearchInterfaces;
+				PRODUCT_NAME = VNSearchInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CC6C5624513E306BEA7AF5641ED7B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B953551B89CF65557BD1C38C188B8E /* VNCommon-framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNCommon-framework/VNCommon-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNCommon-framework/VNCommon-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNCommon-framework/VNCommon-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNCommon;
+				PRODUCT_NAME = VNCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		847DA5FF14529A7F4C177E10FCF078ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F13E9520875AE0D4028E54CBCE8C65 /* VNSearchMocks.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		884613EE0375E4A39F44E267883FB489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86175099564AD83AC836DB7ED6B7D338 /* Pods-__demodeps.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodeps/Pods-__demodeps-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodeps/Pods-__demodeps.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92BC11B5DD48143CEF427366BE74AC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7815BABE17190632E7E65C90267149C /* VNCommon-framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNCommon-framework/VNCommon-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNCommon-framework/VNCommon-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNCommon-framework/VNCommon-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNCommon;
+				PRODUCT_NAME = VNCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95054067862B733C81DF0EBD633E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C16F58299BD9B17F78C2AA35D0E6AE /* VNServicesInterfaces-framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNServicesInterfaces-framework/VNServicesInterfaces-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNServicesInterfaces;
+				PRODUCT_NAME = VNServicesInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CBAE98F1E2F9C1FEF8764D5E4A964C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5D0E96D1786E9607D168C2110AA022 /* VNSearch-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearch-library/VNSearch-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNSearch/VNSearch-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNSearch;
+				PRODUCT_NAME = "VNSearch-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A005F478ACDE47E5435310C47198E679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93171B111AB282C9554DDE55F03BF05 /* VNServices-framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServices-framework/VNServices-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNServices-framework/VNServices-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNServices-framework/VNServices-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNServices;
+				PRODUCT_NAME = VNServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3E16932B277A1BBC7D2FAF0487C1653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4326470C449AB586BB17760209C0FD /* Sourcery.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B68F89F665D58C709268FC01FE6FD6DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8373FD6F7DD64E8B05FB3DF2D2C1A7 /* VNServicesMocks.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1B6D80E7E20E6289270E28F94779E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBC152A0D6A397C466C25AC448E2E59 /* Sourcery.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7C1E714F99FC99F2B9C8F1EC9CD8125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08006BFB171252B12BA5F0395E5C0A0D /* VNCommon-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNCommon-library/VNCommon-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNCommon/VNCommon-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNCommon;
+				PRODUCT_NAME = "VNCommon-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB45C372A0DC0BCC5D3207ABC43DC382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEC805E73E864815027825671F6DDE8 /* VNServicesInterfaces-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNServicesInterfaces-library/VNServicesInterfaces-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNServicesInterfaces/VNServicesInterfaces-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNServicesInterfaces;
+				PRODUCT_NAME = "VNServicesInterfaces-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D99FBDD14EB805591EC03E3B34552C8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B35F7640666963F1E7F38C515B0175 /* VNI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNI/VNI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNI/VNI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNI/VNI.modulemap";
+				PRODUCT_MODULE_NAME = VNI;
+				PRODUCT_NAME = VNI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E04E69659A4726077BF3D889E2E6BB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AD8D51A21970A12FBF81C94D9DDB9B /* VNSearch-framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearch-framework/VNSearch-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNSearch-framework/VNSearch-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNSearch-framework/VNSearch-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNSearch;
+				PRODUCT_NAME = VNSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E13FD78956084D47A4CBC0CB5A0C48AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B568E1CE0234DD0F34748B843825686 /* VNSearchInterfaces-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearchInterfaces-library/VNSearchInterfaces-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNSearchInterfaces;
+				PRODUCT_NAME = "VNSearchInterfaces-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3B37B5E388ABE5039399E8E2BDEEFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846C6C353B928B1CF449A795BCF4EAFC /* VNSearchInterfaces-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearchInterfaces-library/VNSearchInterfaces-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNSearchInterfaces/VNSearchInterfaces-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNSearchInterfaces;
+				PRODUCT_NAME = "VNSearchInterfaces-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED6E3D240DDC6872DDACD57611DC1495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38563EFC07418349145449F86A4640A /* Pods-__demodepsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-__demodepsTests/Pods-__demodepsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-__demodepsTests/Pods-__demodepsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3AC514CB4DBDBB2E80872D8BDF044F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA074E2945D74CC5139EA0AE31FFE27 /* VNSearch-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearch-library/VNSearch-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Headers/Public/VNSearch/VNSearch-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VNSearch;
+				PRODUCT_NAME = "VNSearch-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F90C28A6D8ECB96EF6A9750E3560A936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315815BCC7373FD9BE0DF4B46B2697D2 /* VNSearchInterfaces-framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VNSearchInterfaces-framework/VNSearchInterfaces-framework.modulemap";
+				PRODUCT_MODULE_NAME = VNSearchInterfaces;
+				PRODUCT_NAME = VNSearchInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1820960205A2653811E498A5FB4AAB3C /* Build configuration list for PBXNativeTarget "VNCommon-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BC11B5DD48143CEF427366BE74AC93 /* Debug */,
+				7CC6C5624513E306BEA7AF5641ED7B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCA187E3F103924B23484FA11ECE28E /* Build configuration list for PBXNativeTarget "Pods-__demodepsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6E3D240DDC6872DDACD57611DC1495 /* Debug */,
+				6FEBF46EED384A099FEA3F7304CFF90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53D6B5E36C46965CADF9D196CAAAAF12 /* Build configuration list for PBXNativeTarget "VNSearchInterfaces-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E13FD78956084D47A4CBC0CB5A0C48AC /* Debug */,
+				E3B37B5E388ABE5039399E8E2BDEEFE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6518E71253B508504D66AA8CE0571287 /* Build configuration list for PBXAggregateTarget "VNSearchMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4325979F2DBA9B3216AD3F9B33729927 /* Debug */,
+				847DA5FF14529A7F4C177E10FCF078ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C8BD7EC751262EED3A09B88019CD09 /* Build configuration list for PBXNativeTarget "VNServicesInterfaces-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC43A4C839C9C894C2DF005B34979C6 /* Debug */,
+				95054067862B733C81DF0EBD633E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2D29F2EBF1976C0D4E10345B992051 /* Build configuration list for PBXNativeTarget "VNServices-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A005F478ACDE47E5435310C47198E679 /* Debug */,
+				38C10DD933B50C814A36E6CBFBE9642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D719577E03D0CC89EA24C40E4328D1 /* Build configuration list for PBXAggregateTarget "VNServicesMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22087E10A7202F608A7351F9E6ADEC1D /* Debug */,
+				B68F89F665D58C709268FC01FE6FD6DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0FA8664472892B08200EA125A01D5C /* Build configuration list for PBXAggregateTarget "Sourcery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E16932B277A1BBC7D2FAF0487C1653 /* Debug */,
+				BB1B6D80E7E20E6289270E28F94779E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D63FED897474E5D6DF3B76208ABD2AD /* Build configuration list for PBXNativeTarget "VNI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C795314232D9D0D95AD8C8704EA215 /* Debug */,
+				D99FBDD14EB805591EC03E3B34552C8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7685521AD1A446A3CE705BF9AF97F2D /* Build configuration list for PBXNativeTarget "VNServices-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512ECE3495759C4ED7EBE82BB4A82979 /* Debug */,
+				75E6A97E57B770926CE80BCB65043143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9811361E0300DC97890EC57891AFDA2 /* Build configuration list for PBXNativeTarget "VNSearch-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04E69659A4726077BF3D889E2E6BB71 /* Debug */,
+				4B80D3E66E3F51F762FCFD2E06ADE73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDD931D4FAFDFEB26C21E231176878F /* Build configuration list for PBXNativeTarget "Pods-__demodeps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F530B6EB7B604745C9D1E54E598593 /* Debug */,
+				884613EE0375E4A39F44E267883FB489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4FF50F27D5C07E3443340D26C4035F6 /* Build configuration list for PBXNativeTarget "VNSearch-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBAE98F1E2F9C1FEF8764D5E4A964C6 /* Debug */,
+				F3AC514CB4DBDBB2E80872D8BDF044F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D636A3C94C237B9257C2A94B611501C8 /* Build configuration list for PBXNativeTarget "VNSearchInterfaces-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90C28A6D8ECB96EF6A9750E3560A936 /* Debug */,
+				7BEA315DDFD3E0ADDB1C0147930D2E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB027B137BBE811D90606B954BD3003F /* Build configuration list for PBXNativeTarget "VNServicesInterfaces-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46105ACD825773811C68CFACB89C99B5 /* Debug */,
+				CB45C372A0DC0BCC5D3207ABC43DC382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFAD46FF75D19CD36DBB85EACAD889F /* Build configuration list for PBXNativeTarget "Pods-__demodeps-__demodepsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3366F6021A1576F91E48EB414630DAC3 /* Debug */,
+				0FFB88D1317CE1D3111A4EB250BE00EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0A1C8C262AED5B255D9B25FCF33121 /* Build configuration list for PBXNativeTarget "VNCommon-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D4A7C9CAF0A4644FF377CC994ED5F3 /* Debug */,
+				C7C1E714F99FC99F2B9C8F1EC9CD8125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

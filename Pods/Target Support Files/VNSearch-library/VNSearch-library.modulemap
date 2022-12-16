@@ -1,0 +1,6 @@
+module VNSearch {
+  umbrella header "VNSearch-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

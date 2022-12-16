@@ -1,0 +1,6 @@
+framework module Pods___demodepsTests {
+  umbrella header "Pods-__demodepsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module VNSearchInterfaces {
+  umbrella header "VNSearchInterfaces-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

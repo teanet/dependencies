@@ -1,0 +1,6 @@
+framework module VNCommon {
+  umbrella header "VNCommon-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+module VNServicesInterfaces {
+  umbrella header "VNServicesInterfaces-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

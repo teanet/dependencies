@@ -1,0 +1,49 @@
+{
+  "name": "VNServices",
+  "version": "0.0.1",
+  "summary": "VNServices",
+  "authors": {
+    "v4ios": "v4ios@2gis.ru"
+  },
+  "homepage": "http://EXAMPLE/VNServices",
+  "license": "MIT",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "http://2gis.ru/VNServices.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Src/**/*.{swift}",
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "VNServicesInterfaces": [
+
+    ],
+    "VNSearchInterfaces": [
+
+    ],
+    "VNCommon": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit"
+    }
+  ],
+  "appspecs": [
+    {
+      "name": "Demo"
+    }
+  ],
+  "swift_version": "5.0"
+}

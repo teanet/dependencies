@@ -1,0 +1,32 @@
+{
+  "name": "VNSearchInterfaces",
+  "version": "0.0.1",
+  "summary": "VNSearchInterfaces",
+  "authors": {
+    "v4ios": "v4ios@2gis.ru"
+  },
+  "homepage": "http://EXAMPLE/VNSearchInterfaces",
+  "license": "MIT",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "http://2gis.ru/VNSearchInterfaces.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Interfaces/**/*.{swift}",
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "VNCommon": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

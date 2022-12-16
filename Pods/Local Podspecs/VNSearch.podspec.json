@@ -1,0 +1,49 @@
+{
+  "name": "VNSearch",
+  "version": "0.0.1",
+  "summary": "VNSearch",
+  "authors": {
+    "v4ios": "v4ios@2gis.ru"
+  },
+  "homepage": "http://EXAMPLE/VNSearch",
+  "license": "MIT",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "http://2gis.ru/VNSearch.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Src/**/*.{swift}",
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "VNSearchInterfaces": [
+
+    ],
+    "VNServicesInterfaces": [
+
+    ],
+    "VNCommon": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit"
+    }
+  ],
+  "appspecs": [
+    {
+      "name": "Demo"
+    }
+  ],
+  "swift_version": "5.0"
+}
