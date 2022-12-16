@@ -10,7 +10,7 @@ public class SearchDependencies: ISearchDependencies {
 	public init(dependencies: ISearchDependencies) {
 		self.dependencies = dependencies
 	}
-	public var services: IServices { self.dependencies.services }
+	public lazy var services: IServices = { self.dependencies.services }()
 }
 
 public protocol ISearchDependencies: IServicesProvider {}

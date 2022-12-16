@@ -13,7 +13,7 @@ public class ServicesDependencies: IServicesDependencies {
 		self.dependencies = dependencies
 	}
 
-	public var search: ISearch { self.dependencies.search }
+	public lazy var search: ISearch = { self.dependencies.search }()
 }
 
 public class ServicesContainer: BaseContainer<ServicesDependencies>, IServices {
