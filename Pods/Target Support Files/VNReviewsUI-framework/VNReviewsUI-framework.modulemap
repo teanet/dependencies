@@ -1,0 +1,6 @@
+framework module VNReviewsUI {
+  umbrella header "VNReviewsUI-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

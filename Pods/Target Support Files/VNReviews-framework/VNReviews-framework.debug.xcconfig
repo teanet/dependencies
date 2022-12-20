@@ -1,9 +1,10 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/VNReviews-framework
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/VNCommon-framework" "${PODS_CONFIGURATION_BUILD_DIR}/VNReviewsInterfaces-framework" "${PODS_CONFIGURATION_BUILD_DIR}/VNSearchInterfaces-framework"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/VNCommon-framework" "${PODS_CONFIGURATION_BUILD_DIR}/VNReviewsDependencies-framework" "${PODS_CONFIGURATION_BUILD_DIR}/VNReviewsInterfaces-framework" "${PODS_CONFIGURATION_BUILD_DIR}/VNSearchInterfaces-framework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public"
 LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "UIKit" -framework "VNCommon" -framework "VNReviewsInterfaces" -framework "VNSearchInterfaces"
+OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "UIKit" -framework "VNCommon" -framework "VNReviewsDependencies" -framework "VNReviewsInterfaces"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

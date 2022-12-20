@@ -1,13 +1,11 @@
 import Foundation
 import VNReviewsInterfaces
 
-public protocol IReviewsListVMDependencies: IReviewsServiceProvider {}
-
 /// VM для отображения отзывов
 @available(iOS 13.0.0, *)
 @MainActor public class ReviewsListVM {
 
-	public typealias Dependencies = IReviewsListVMDependencies
+	public typealias Dependencies = IReviewsServiceProvider
 
 	var viewModelChanged: (() -> Void)?
 

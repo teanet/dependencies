@@ -1,0 +1,1 @@
+../../../Target Support Files/VNReviewsDependencies-library/VNReviewsDependencies-library-umbrella.h

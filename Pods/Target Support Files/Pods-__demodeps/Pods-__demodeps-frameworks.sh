@@ -178,7 +178,9 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/VNCommon-framework/VNCommon.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNReviews-framework/VNReviews.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsDependencies-framework/VNReviewsDependencies.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsInterfaces-framework/VNReviewsInterfaces.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsUI-framework/VNReviewsUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNSearch-framework/VNSearch.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNSearchInterfaces-framework/VNSearchInterfaces.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNServices-framework/VNServices.framework"
@@ -188,7 +190,9 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/VNCommon-framework/VNCommon.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNReviews-framework/VNReviews.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsDependencies-framework/VNReviewsDependencies.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsInterfaces-framework/VNReviewsInterfaces.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VNReviewsUI-framework/VNReviewsUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNSearch-framework/VNSearch.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNSearchInterfaces-framework/VNSearchInterfaces.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VNServices-framework/VNServices.framework"

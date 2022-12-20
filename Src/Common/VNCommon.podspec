@@ -2,7 +2,7 @@ load '../../Phasesfile'
 
 Pod::Spec.new do |s|
   s.common_init "VNCommon"
-
+	s.source_files = 'Src/**/*.{swift,h,m}'
   # s.test_spec 'Tests' do |ts|
   #   # ts.source_files = 'Test/Unit/*.swift'
   #   # ts.requires_app_host = true

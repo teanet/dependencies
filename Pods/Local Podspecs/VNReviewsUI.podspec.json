@@ -31,7 +31,19 @@
   "testspecs": [
     {
       "name": "Tests",
-      "test_type": "unit"
+      "test_type": "unit",
+      "dependencies": {
+        "VNReviews": [
+
+        ],
+        "VNReviewsMocks": [
+
+        ],
+        "VNSearchMocks": [
+
+        ]
+      },
+      "source_files": "Test/Unit/*.swift"
     }
   ],
   "appspecs": [

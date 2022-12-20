@@ -9,11 +9,23 @@ PODS:
     - VNServices
   - VNReviews (0.0.1):
     - VNCommon
+    - VNReviewsDependencies
+    - VNReviewsInterfaces
+  - VNReviewsDependencies (0.0.1):
     - VNReviewsInterfaces
     - VNSearchInterfaces
   - VNReviewsInterfaces (0.0.1)
   - VNReviewsMocks (0.0.1):
+    - VNCommon
+    - VNReviewsDependencies
     - VNReviewsInterfaces
+  - VNReviewsUI (0.0.1):
+    - VNReviewsInterfaces
+  - VNReviewsUI/Tests (0.0.1):
+    - VNReviews
+    - VNReviewsInterfaces
+    - VNReviewsMocks
+    - VNSearchMocks
   - VNSearch (0.0.1):
     - VNCommon
     - VNSearchInterfaces
@@ -36,8 +48,11 @@ DEPENDENCIES:
   - VNCommon (from `Src/Common`)
   - VNI (from `Src/VNI`)
   - VNReviews (from `Src/Reviews`)
+  - VNReviewsDependencies (from `Src/Reviews`)
   - VNReviewsInterfaces (from `Src/Reviews`)
   - VNReviewsMocks (from `Src/Reviews`)
+  - VNReviewsUI (from `Src/Reviews`)
+  - VNReviewsUI/Tests (from `Src/Reviews`)
   - VNSearch (from `Src/Search`)
   - VNSearchInterfaces (from `Src/Search`)
   - VNSearchMocks (from `Src/Search`)
@@ -56,9 +71,13 @@ EXTERNAL SOURCES:
     :path: Src/VNI
   VNReviews:
     :path: Src/Reviews
+  VNReviewsDependencies:
+    :path: Src/Reviews
   VNReviewsInterfaces:
     :path: Src/Reviews
   VNReviewsMocks:
+    :path: Src/Reviews
+  VNReviewsUI:
     :path: Src/Reviews
   VNSearch:
     :path: Src/Search
@@ -75,11 +94,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Sourcery: d7c59d100e55bf59123c8ae7d65a24cf30748979
-  VNCommon: c9efdf85fdfaeb4986b339511a5d7145d347cd89
+  VNCommon: 35eff71a28b254e8093110031450cdff028afabc
   VNI: 3b535fc696df64dfa025641244255e5fdfee7e6d
-  VNReviews: 9c1084c76658f9b72c6a14bc79af82a1cfcd3590
+  VNReviews: 383759f891f897a47c00002aeac4be996cd67239
+  VNReviewsDependencies: fe9a51b8beaff4e9cabfe0817e0d7c6c6e61c2cb
   VNReviewsInterfaces: 50a5af639190868253b3898a9f5998d2a25ebfd0
-  VNReviewsMocks: 91f38d530c1c92dad1a4fab14ea6a46e71d4045e
+  VNReviewsMocks: cfd30e45f0beb9f859c372a3871b6f5add1c964d
+  VNReviewsUI: 90b0e6aed72bc254d8c27cb7f29e74d259cf3c07
   VNSearch: 0228cfbd5470ca111eec5aec8d97fe58f876ba96
   VNSearchInterfaces: cf2dd158080a8acc663c4e580e93aed3ab2852bf
   VNSearchMocks: 156369601d9f354820180af83cb66abde33dbf01
@@ -87,6 +108,6 @@ SPEC CHECKSUMS:
   VNServicesInterfaces: 6ef64c0fbe685ff0e02c14a5d885502eb7d9a5e4
   VNServicesMocks: 86d61da922c36773d9f32dd6d9491ade7488d670
 
-PODFILE CHECKSUM: 95281434c588c82750cfb9c8ce2ca9f5dffbb5d4
+PODFILE CHECKSUM: df1d28ad50558516f886daebdd5df69a1e34ae44
 
 COCOAPODS: 1.11.3

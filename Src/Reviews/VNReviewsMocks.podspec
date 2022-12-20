@@ -3,6 +3,8 @@ load '../../Phasesfile'
 Pod::Spec.new do |s|
   s.common_init("VNReviewsMocks", "Mocks")
   s.dependency "VNReviewsInterfaces"
+	s.dependency "VNReviewsDependencies"
+	s.dependency "VNCommon"
   # s.test_spec 'Tests' do |ts|
   #   # ts.source_files = 'Test/Unit/*.swift'
   #   # ts.requires_app_host = true

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BD12465FA405DA7E49EEB8F5B2CDB36"
-               BuildableName = "VNSearchMocks"
+               BuildableName = "libVNSearchMocks.a"
                BlueprintName = "VNSearchMocks"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

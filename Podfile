@@ -12,15 +12,18 @@ pod 'VNSearchInterfaces',     :path => 'Src/Search'
 pod 'VNSearchMocks',          :path => 'Src/Search'
 pod 'VNReviews',               :path => 'Src/Reviews'
 pod 'VNReviewsInterfaces',     :path => 'Src/Reviews'
+pod 'VNReviewsDependencies',     :path => 'Src/Reviews'
 pod 'VNReviewsMocks',          :path => 'Src/Reviews'
-
+pod 'VNReviewsUI',          :path => 'Src/Reviews', :appspecs => ['Tests']
 pod 'Sourcery'
+
 end
 
 target '__demodeps' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'VNI',                    :path => 'Src/VNI'
+	pod 'VNReviewsUI',          :path => 'Src/Reviews'
 
   target '__demodepsTests' do
     inherit! :search_paths
@@ -33,7 +36,6 @@ target '__demodeps' do
 
 end
 
-
 # Change default pods builds folder to avoid conflict with v4ios builds folder
 post_install do |installer|
     installer.pods_project.targets.each do |target|
@@ -41,5 +43,4 @@ post_install do |installer|
             config.build_settings['SWIFT_VERSION'] = '5.0'
         end
     end
-
 end

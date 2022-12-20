@@ -7,7 +7,30 @@
 		<key>__demodeps.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>0</integer>
+		</dict>
+		<key>__demodepsTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>733E70BA293089A400AD556D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>733E70D0293089A700AD556D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>733E70DA293089A700AD556D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

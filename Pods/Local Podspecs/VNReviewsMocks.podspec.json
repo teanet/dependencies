@@ -26,6 +26,12 @@
   "dependencies": {
     "VNReviewsInterfaces": [
 
+    ],
+    "VNReviewsDependencies": [
+
+    ],
+    "VNCommon": [
+
     ]
   },
   "swift_version": "5.0"

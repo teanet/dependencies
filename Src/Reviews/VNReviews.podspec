@@ -3,7 +3,7 @@ load '../../Phasesfile'
 Pod::Spec.new do |s|
   s.common_init "VNReviews"
   s.dependency "VNReviewsInterfaces"
-	s.dependency "VNSearchInterfaces"
+	s.dependency "VNReviewsDependencies"
   s.dependency "VNCommon"
 
   s.test_spec 'Tests' do |ts|

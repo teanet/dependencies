@@ -1,7 +1,9 @@
 ${PODS_ROOT}/Target Support Files/Pods-__demodeps/Pods-__demodeps-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/VNCommon-framework/VNCommon.framework
 ${BUILT_PRODUCTS_DIR}/VNReviews-framework/VNReviews.framework
+${BUILT_PRODUCTS_DIR}/VNReviewsDependencies-framework/VNReviewsDependencies.framework
 ${BUILT_PRODUCTS_DIR}/VNReviewsInterfaces-framework/VNReviewsInterfaces.framework
+${BUILT_PRODUCTS_DIR}/VNReviewsUI-framework/VNReviewsUI.framework
 ${BUILT_PRODUCTS_DIR}/VNSearch-framework/VNSearch.framework
 ${BUILT_PRODUCTS_DIR}/VNSearchInterfaces-framework/VNSearchInterfaces.framework
 ${BUILT_PRODUCTS_DIR}/VNServices-framework/VNServices.framework

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Proxy.h"
 
 FOUNDATION_EXPORT double VNCommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char VNCommonVersionString[];
